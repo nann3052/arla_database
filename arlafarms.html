@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Arla Database</title>
+  <title>My Farm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Arla Farmers Database">
+  <meta name="description" content="My Farm page">
   <link rel="shortcut icon" type="image/png" href="img/" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
   <link rel="stylesheet" href="css/main.css">
@@ -15,18 +15,20 @@
   <div class="topnav">
     <a href="index.html">Home</a>
     <a href="data.html">Data</a>
-    <a href="arlafarms.html">Arla Farms</a>
+    <a class="active" href="arlafarms.html">Arla Farms</a>
     <a href="myfarm.html">My Farm</a>
   </div>
 
   <header>
-    <h1>Welcome farmer</h1>
+    <h1>Arla Farms</h1>
   </header>
 
-
-
-
-
+  <h2>Herd - Number of Cows</h2>
+  <canvas id="cows"></canvas>
+  <h2>Carbon Footprint</h2>
+  <canvas id="carbonFootprint"></canvas>
+  <h2>Milk Production pr cow - North vs South</h2>
+  <canvas id="milkProduction"></canvas>
   <!-- Firebase App SDKs -->
   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
