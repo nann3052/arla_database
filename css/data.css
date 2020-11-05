@@ -3,6 +3,7 @@
   --light-green: #579755;
   --blue-green: #ACDAC2;
   --dark-grey: #3A4443;
+  --light-grey: #D5DED7;
 }
 
 
@@ -40,4 +41,29 @@ main {
 
 #data-input-container {
   width: 85vw;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .centernav,
+  .rightnav,
+  aside,
+  #farm-navigation {
+    display: none;
+  }
+
+  #data-input-container {
+    width: 100vw;
+  }
+
+  #farm-navigation-mobile {
+    display: block;
+    width: 100vw;
+    background-color: var(--dark-green);
+    color: #fff;
+  }
+
+  #data-categories-mobile {
+    background-color: var(--light-grey);
+  }
 }
