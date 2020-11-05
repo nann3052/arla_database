@@ -26,7 +26,7 @@ h2 {
   letter-spacing: 3px;
   margin: 2.5em 0 1em;
 }
-
+/*------ Graphs ------*/
 canvas {
   max-width: 80%;
   margin: 2em auto;
@@ -34,26 +34,31 @@ canvas {
 
 /*------ Navigation bar ------*/
 
-.topnav {
+.nav {
   background-color: #333;
   overflow: hidden;
   padding: 2%;
 }
-.topnav a {
+.nav a {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1em;
 }
-.topnav img {
+.leftnav img {
   width: 5%;
+  float:left;
 }
 
-.topnav a:hover {
+.rightnav {
+  float:right;
+}
+
+.nav a:hover {
   color: black;
 }
 
-.topnav a.active {
+.nav a.active {
   color: #4CAF50;
 }
