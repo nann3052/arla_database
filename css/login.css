@@ -1,0 +1,61 @@
+body {
+    overflow: hidden;
+}
+
+#scene img {
+    display: flex;
+    position: absolute;
+    height: auto;
+}
+
+/*sun*/
+#scene img:nth-of-type(1) {
+    top: 10vh !important;
+    left: -25vw !important;
+    width: 150vw;
+    z-index: 1;
+}
+
+/*hills*/
+#scene img:nth-of-type(2) {
+    top: 35vh !important;
+    left: 10vw !important;
+    width: 110vw;
+    z-index: 2;
+}
+
+#scene img:nth-of-type(3) {
+    top: 40vh !important;
+    left: -50vw !important;
+    width: 180vw;
+    z-index: 3;
+}
+
+#scene img:nth-of-type(4) {
+    top: 50vh !important;
+    left: -20vw !important;
+    width: 150vw;
+    z-index: 4;
+}
+
+#scene img:nth-of-type(5) {
+    top: 55vh !important;
+    left: -30vw !important;
+    width: 150vw;
+    z-index: 5;
+}
+
+#scene img:nth-of-type(6) {
+    top: 70vh !important;
+    left: -30vw !important;
+    width: 160vw;
+    z-index: 6;
+}
+
+/*logo*/
+#scene img:nth-of-type(7) {
+    top: 3vh !important;
+    left: 45vw !important;
+    width: 10vw;
+    z-index: 7;
+}
