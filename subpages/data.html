@@ -9,6 +9,7 @@
   <link rel="shortcut icon" type="image/png" href="img/arla_flower.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/data.css">
 </head>
 
 <body onhashchange="pageChange()">
@@ -30,9 +31,16 @@
   </nav>
 
 <main>
-
-  <h1>Data Input</h1>
-
+  <aside>
+    <h3>Cows</h3>
+    <h3>Milk</h3>
+    <h3>Herd</h3>
+  </aside>
+  <div id="data-input-container">
+    <div id="farm-navigation">
+    <div id="farm1"><h2>NØRBYGÅRD - 56654</h2></div>
+    <div id="farm2"><h2>ØGÅRDEN - 99833</h2></div>
+  </div>
   <form>
     <label for="drymatter">kg dry matter pr year-cow</label><br>  
     <input type="text" id="drymatter" name="drymatter"><br>
@@ -40,7 +48,9 @@
     <input type="text" id="milk" name="milk"><br>
     <label for="cows">nr. of cows</label><br>
     <input type="text" id="cows" name="cows"><br>
-</form>
+  </form>
+</div>
+  
 
 </main>
 

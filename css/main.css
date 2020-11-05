@@ -1,6 +1,15 @@
 * {
   line-height: 1.2;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-green: #006A38;
+  --light-green: #579755;
+  --blue-green: #ACDAC2;
+  --dark-grey: #3A4443;
 }
 
 html {
@@ -13,20 +22,6 @@ html {
   font-weight: 200;
 }
 
-h1 {
-  font-size: 2em;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin: 1em 0;
-}
-
-h2 {
-  font-size: 1.8em;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin: 2.5em 0 1em;
-}
-
 canvas {
   max-width: 80%;
   margin: 2em auto;
@@ -36,28 +31,34 @@ canvas {
 
 nav {
   background-color: #333;
-  overflow: hidden;
-  padding: 2%;
+  /* overflow: hidden; */
+  /* padding: 2%; */
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  height: 7vh;
 }
 
 .leftnav {
+  margin-top: 0.7vh;
   height: 5vh;
   width: 33vw;
   text-align: left;
 }
 
 .centernav {
-  height: 5vh;
   width: 33vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rightnav {
-  height: 5vh;
   width: 33vw;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 
