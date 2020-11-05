@@ -3,42 +3,48 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Arla Database</title>
+  <title>My Farm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Arla Farmers Database">
+  <meta name="description" content="My Farm page">
   <link rel="shortcut icon" type="image/png" href="img/arla_flower.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-  <div class="topnav">
-    <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
-    <a class="active" href="data.html">Data</a>
+
+  <nav>
+    <div class="leftnav">
+      <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
+    </div>
+    <a href="data.html">Data</a>
     <a href="arlafarms.html">Arla Farms</a>
-    <a href="myfarm.html">My Farm</a>
-  </div>
+    <a class="active" href="myfarm.html">My Farm</a>
+    <div class="rightnav">
+      <a href="data.html">Questions</a>
+      <a href="data.html">Flag</a>
+      <a href="data.html">Logout</a>
+    </div>
 
-  <header>
-    <h1>Data Input</h1>
-  </header>
+  </nav>
 
-<main>
-
-  <h1>Data Input</h1>
-
-  <form>
-    <label for="drymatter">kg dry matter pr year-cow</label><br>  
-    <input type="text" id="drymatter" name="drymatter"><br>
-    <label for="milk">kg milk pr year-cow</label><br>
-    <input type="text" id="milk" name="milk"><br>
-    <label for="cows">nr. of cows</label><br>
-    <input type="text" id="cows" name="cows"><br>
-</form>
-
-</main>
+  
+    <h1>My Sustainability Tracker</h1>
+  
+  <h2>Herd - Number of Cows</h2>
+  <canvas id="cows"></canvas>
+  <h2>Carbon Footprint</h2>
+  <canvas id="carbonFootprint"></canvas>
+  <h2>Milk Production pr cow - North vs South</h2>
+  <canvas id="milkProduction"></canvas>
 
 
+  <!--Goals section-->
+
+  <section>
+
+
+  </section>
 
 
 
