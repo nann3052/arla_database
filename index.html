@@ -12,26 +12,41 @@
 </head>
 
 <body>
+  <div class="topnav">
+    <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
+    <a href="data.html">Data</a>
+    <a href="arlafarms.html">Arla Farms</a>
+    <a href="myfarm.html">My Farm</a>
+  </div>
 
   <header>
-    <div class="nav">
-      <div class="leftnav">
-        <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
-      </div>
-      <a href="data.html">Data</a>
-      <a href="arlafarms.html">Arla Farms</a>
-      <a class="active" href="myfarm.html">My Farm</a>
-      <div class="rightnav">
-        <a href="data.html">Questions</a>
-        <a href="data.html">Flag</a>
-        <a href="data.html">Logout</a>
-      </div>
-
-    </div>
+    <h1>Welcome farmer</h1>
   </header>
 
+<main>
+  <section class="banner_container">
+    <img src="img/cows.png" class="banner_img" alt="cows">
+    <h1 class="banner_headline">Welcome Rasmus</h1>
+    <h3 class="banner_text">Your quarterly sustainability report is ready to be filled out.</h3>
+    <h3 class="banner_text">Help Arla pave the way to a more sustainable dairy production today!</h3>
+    <button onclick="location.href='data.html'" type="button">Get Started Now</button>
+  </section>
 
+  <section class="goals_container">
+    <h2><a href="myfarm.html">Goals</a></h2>
+    <img src="img/eye_icon.png" class="goals_img" alt="eye">
+  </section>
 
+</main>
+
+ <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/onboarding_img.png" class="images">
+            <img src="img/onboarding_img.png" class="images">
+            <h1>Welcome to Arla Farmers Database</h1>
+        </div>
+    </div>
 
 
   <!-- Firebase App SDKs -->
