@@ -26,6 +26,7 @@ h2 {
   letter-spacing: 3px;
   margin: 2.5em 0 1em;
 }
+
 /*------ Graphs ------*/
 canvas {
   max-width: 80%;
@@ -39,6 +40,7 @@ canvas {
   overflow: hidden;
   padding: 2%;
 }
+
 .nav a {
   color: #f2f2f2;
   text-align: center;
@@ -46,13 +48,14 @@ canvas {
   text-decoration: none;
   font-size: 1em;
 }
+
 .leftnav img {
   width: 5%;
-  float:left;
+  float: left;
 }
 
 .rightnav {
-  float:right;
+  float: right;
 }
 
 .nav a:hover {
@@ -62,3 +65,35 @@ canvas {
 .nav a.active {
   color: #4CAF50;
 }
+
+/*------ Banner ------*/
+
+.main_container {
+  width: auto;
+}
+
+.banner_container {
+  display: flex;
+  justify-content: center;
+}
+
+.banner_img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.banner_content {
+  position: absolute;
+}
+
+/*------ Onboarding ------*/
+.onboarding_img {
+  width: 20vw;
+}
+
+/*------ Goals Section ------*/
+
+
+/* Desktop */
+@media only screen and (min-width: 768px) {}
