@@ -52,10 +52,20 @@
       <!-- <div id="farm2"><h2>ØGÅRDEN - 99833</h2></div> -->
     </div>
     <div id="data-categories-mobile">
-       <form>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#cows">Cows</a>
+    <a href="#herd">Herd</a>
+    <a href="#energy">Energy</a>
+  </div>
+</div>
+
+       <!-- <form>
         <select>
           <option>Cows</option>
-          <option>Herd</option>
+         <option>Herd</option>
           <option>Energy</option>
           <option>Diesel</option>
           <option>Electricity and heating</option>
@@ -63,42 +73,69 @@
           <option>Imported feed</option>
           <option>Carbon footprint</option>
         </select>
-      </form>
+      </form> -->
       <!-- <h3>Cows</h3> -->
       <!-- <h3>Milk</h3>
       <h3>Herd</h3> -->
     </div>
-  <form>
-    <label for="drymatter">kg dry matter pr year-cow</label><br>  
-    <input type="text" id="drymatter" name="drymatter"><br>
-    <label for="milk">kg milk pr year-cow</label><br>
-    <input type="text" id="milk" name="milk"><br>
-    <label for="cows">nr. of cows</label><br>
-    <input type="text" id="cows" name="cows"><br>
-  </form>
+  
 </div>
   
 
 </main>
-
   <!-- pages -->
-  <section id="" class="page">
-
+  <section id="cows" class="page">
+    <form>
+      <label for="feed_consumption">Feed consumption</label><br>  
+      <input type="text" id="feed_consumption" name="feed_consumption"><br>
+    </form>
   </section>
 
-  <section id="" class="page">
-
+  <section id="herd" class="page">
+    <form>
+      <label for="milk_production">Milk production</label><br>  
+      <input type="text" id="milk_production" name="milk_production"><br>
+      <label for="year_cows">Year-cows</label><br>  
+      <input type="text" id="year_cows" name="year_cows"><br>
+      <label for="self_sufficiency">Self-sufficiency in feed</label><br>  
+      <input type="text" id="self_sufficiency" name="self_sufficiency"><br>
+    </form>
   </section>
 
 
-  <section id="" class="page">
-    
+  <section id="energy" class="page">
+    <label for="diesel">Diesel</label><br>  
+    <input type="text" id="diesel" name="diesel"><br>
+    <label for="electricity">Electricity</label><br>  
+    <input type="text" id="electricity" name="electricity"><br>
   </section>
 
  
-  <section id="" class="page">
-   
+  <section id="diesel" class="page">
+   <label for="carbon_dioxide">Carbon dioxide</label><br>  
+    <input type="text" id="carbon_dioxide" name="carbon_dioxide"><br>
   </section>
+
+  <section id="electricity" class="page">
+   <label for="carbon_dioxide">Carbon dioxide</label><br>  
+    <input type="text" id="carbon_dioxide" name="carbon_dioxide"><br>
+  </section>
+
+  <section id="digestion" class="page">
+   <label for="methane">Methane</label><br>  
+    <input type="text" id="methane" name="methane"><br>
+  </section>
+  
+  <section id="imported-feed" class="page">
+   <label for="carbon_dioxide">Carbon dioxide</label><br>  
+    <input type="text" id="carbon_dioxide" name="carbon_dioxide"><br>
+  </section>
+
+  <section id="carbon-footprint" class="page">
+   <label for="carbon_dioxide">Carbon dioxide</label><br>  
+    <input type="text" id="carbon_dioxide" name="carbon_dioxide"><br>
+  </section>
+
 
 
   <!-- Firebase App SDKs -->
@@ -112,6 +149,8 @@
   <script src="/js/main.js"></script>
   <!-- SPA functionality  -->
   <script src="/js/spa.js"></script>
+  <!-- data page js file -->
+  <script src="/js/datainput.js"></script>
 </body>
 
 </html>

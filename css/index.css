@@ -1,0 +1,203 @@
+* {
+  line-height: 1.2;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Blk.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Bd.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Rg.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Lt.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Th.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+html {
+  color: #333;
+  display: table;
+  font-family: 'Arla InterFace', sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 1em 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 2.5em 0 1em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2em;
+  letter-spacing: 0;
+  margin: 1em 0 0.5em;
+}
+
+h4 {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin: 1em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: 0;
+}
+
+/*------ Graphs ------*/
+canvas {
+  max-width: 80%;
+  margin: 2em auto;
+}
+
+
+
+/*------ Banner ------*/
+
+.main_container {
+  width: auto;
+}
+
+.banner_container {
+  width: 100%;
+  height: 30vh;
+  background-image: linear-gradient(rgba(0, 0.5, 0, 0.5),
+      rgba(0, 0.5, 0, 0.5)), url(../img/cows.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner_content {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  margin: 0 1em;
+  text-shadow: 1px 1px 2px black;
+}
+
+.banner_text {
+  display: inline;
+}
+
+.banner_btn {
+  display: inline-block;
+  margin: 1.5em 0 2em;
+  padding: 1em 3em;
+  border: 3px white solid;
+  background: transparent;
+  color: white;
+}
+
+
+/*------ Onboarding ------*/
+
+.onboarding_topbar {
+  width: 100%;
+  height: 10vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.onboarding_logo {
+  width: 25vw;
+  height: 100%;
+}
+
+/* The Close Button */
+.close {
+  color: #333;
+  float: right;
+  font-size: 5em;
+  margin: auto 0;
+}
+
+.onboarding_img {
+  width: 50vw;
+}
+
+.onboarding {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  width: 100%;
+}
+
+/*------ Goals Section ------*/
+
+.goals_headline {
+  text-decoration: none;
+  color: #333;
+  margin-top: 1em;
+}
+
+.goals_icons {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: center;
+}
+
+.goals_img {
+  width: 100%;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+
+  /* Onboarding */
+
+  .onboarding {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

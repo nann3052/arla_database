@@ -9,42 +9,101 @@
   <link rel="shortcut icon" type="image/png" href="img/arla_flower.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+
+
+
   <nav>
-    <div class="leftnav">
-      <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
+    <!---Mobile navigation--->
+    <div class="mobile-nav">
+        <div class="content">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">Arla Farms</a></li>
+                <li><a href="#">My farms</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
     </div>
-    <div class="centernav">
-    <a href="subpages/data.html">Data</a>
-    <a href="subpages/arlafarms.html">Arla Farms</a>
-    <a href="subpages/myfarm.html">My Farm</a>
+    <!---Mobile navigation ends--->
+
+    <!----Desktop navigation--->
+    <div class="desktop-nav">
+      <div class="leftnav">
+        <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
+      </div>
+      <div class="centernav">
+        <a href="subpages/data.html">Data</a>
+        <a href="subpages/arlafarms.html">Arla Farms</a>
+        <a href="subpages/myfarm.html">My Farm</a>
+      </div>
+      <div class="rightnav">
+        <a href="data.html">Questions</a>
+        <a href="data.html">Flag</a>
+        <a href="subpages/login.html">Logout</a>
+      </div>
     </div>
-    <div class="rightnav">
-      <a href="data.html">Questions</a>
-      <a href="data.html">Flag</a>
-      <a href="subpages/login.html">Logout</a>
-    </div>
+    <!---Desktop navigation ends--->
 
   </nav>
 
 
-  <h1>Welcome farmer</h1>
+  <main class="main_container">
+    <section class="banner_container">
+      <div class="banner_content">
+        <h3 class="banner_headline">Welcome Rasmus!</h3>
+        <p class="banner_text">Your quarterly sustainability report is ready to be filled out.</p>
+        <p class="banner_text">Help Arla pave the way to a more sustainable dairy production today!</p>
+        <button onclick="location.href='data.html'" type="button" class="banner_btn">GET STARTED NOW</button>
+      </div>
+    </section>
+
+    <section class="goals_container">
+      <h4><a href="myfarm.html" class="goals_headline">Goals</a></h4>
+      <div class="goals_icons">
+        <img src="img/eye_icon.png" class="goals_img" alt="eye">
+        <img src="img/hay.png" class="goals_img" alt="hay">
+        <img src="img/cow_icon.png" class="goals_img" alt="cow">
+        <img src="img/planet_icon.png" class="goals_img" alt="planet">
+      </div>
+    </section>
 
 
+    <div id="myModal" class="onboarding">
+      <div class="modal-content">
+        <div class="onboarding_topbar">
+        <img src="img/arla_logo.png" class="onboarding_logo" alt="arla logo">
+        <span class="close">&times;</span>
+        </div>
+        <img src="img/onboarding_img.png" class="onboarding_img">
+        <img src="img/onboarding_img.png" class="onboarding_img">
+        <h1>Welcome to Arla Farmers Database</h1>
+      </div>
+    </div>
 
 
-
-  <!-- Firebase App SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
-  <!--- Load chart.js from CDN --->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-  <!-- load firebase config -->
-  <script src="js/firebase_config.js"></script>
-  <!-- main js file -->
-  <script src="js/main.js"></script>
+    <!-- Firebase App SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <!--- Load chart.js from CDN --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <!-- load firebase config -->
+    <script src="js/firebase_config.js"></script>
+    <!-- main js file -->
+    <script src="js/main.js"></script>
+    <!-- modal file -->
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
