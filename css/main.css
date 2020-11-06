@@ -162,19 +162,6 @@ ul {
   transform-origin: 0% 100%;
 }
 
-<<<<<<< Updated upstream
-nav a.active {
-  color: #4CAF50;
-}
-
-@media only screen and (max-width: 400px) {
-
-  .centernav,
-  .rightnav,
-  aside {
-    display: none;
-  }
-=======
 #menuToggle input:checked ~ span
 {
   opacity: 1;
@@ -217,5 +204,4 @@ nav a.active {
 #menuToggle input:checked ~ ul
 {
   transform: none;
->>>>>>> Stashed changes
 }
