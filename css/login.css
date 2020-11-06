@@ -1,6 +1,6 @@
 body {
     overflow: hidden;
-    }
+}
 
 #scene img {
     display: flex;
@@ -76,7 +76,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 5vh;
- 
+
 
 }
 
@@ -96,24 +96,30 @@ body {
     color: #4e985b;
 }
 
-#login button {
+#login a:nth-of-type(1) {
+    height: 10%;
+    width: 50%;
+    margin: 5vh auto;
+    cursor: pointer;
+}
+
+#login a button {
     border-radius: 10px;
     background: #006a38;
-    width: 50%;
+    width: 100%;
     border: none;
     box-shadow: none;
-    margin: 5vh auto;
-    height: 10%;
+    height: 100%;
     font-family: "Arla InterFace";
     font-weight: bold;
     font-size: 3vh;
     text-align: center;
     color: #fff;
-
+    cursor: pointer;
 
 }
 
-#login a {
+#login a:nth-of-type(2) {
     font-family: "Arla InterFace";
     font-weight: normal;
     font-size: 3vh;
@@ -121,5 +127,6 @@ body {
     color: #006a38;
     text-decoration: none;
     margin: 0 auto;
+    cursor: pointer;
 
 }
