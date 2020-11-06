@@ -7,7 +7,7 @@
 }
 
 
-#farm-navigation {
+/* #farm-navigation {
   display: flex;
   justify-content: space-between;
   height: 8vh;
@@ -41,52 +41,104 @@ main {
 
 #data-input-container {
   width: 85vw;
+} */
+
+
+#farm-navigation {
+  display: none;
 }
 
-@media only screen and (max-width: 400px) {
+#data-input-container {
+  width: 100vw;
+}
 
-  #farm-navigation {
-    display: none;
-  }
+aside {
+  display: none;
+}
 
-  #data-input-container {
-    width: 100vw;
-  }
+/* navigation */
 
 
-  /* navigation */
 
-  #farm-navigation-mobile {
-    display: flex;
-    width: 100vw;
-    background-color: var(--dark-green);
-    color: #fff;
-    height: 6vh;
-    align-items: center;
-    justify-content: center;
-  }
+#farm-navigation-mobile {
+  display: flex;
+  width: 100vw;
+  background-color: var(--dark-green);
+  color: #fff;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+}
 
-  #data-categories-mobile {
-    background-color: var(--light-grey);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4vh;
-  }
+#data-categories-mobile {
+  background-color: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+}
 
-  select {
-    /* appearance: none; */
-    border: none;
-    background-color: var(--dark-green);
-    color: #fff;
-    text-align-last: center;
-  }
+select {
+  /* appearance: none; */
+  border: none;
+  background-color: var(--dark-green);
+  color: #fff;
+  text-align-last: center;
+}
 
-  #data-categories-mobile select {
-    background-color: var(--light-grey);
-    color: #000;
-    border: none;
-    width: 25vw;
-  }
+#data-categories-mobile select {
+  background-color: var(--light-grey);
+  color: #000;
+  border: none;
+  width: 25vw;
+}
 
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }
