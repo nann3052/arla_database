@@ -8,27 +8,28 @@
   <meta name="description" content="Arla Farmers Database">
   <link rel="shortcut icon" type="image/png" href="img/arla_flower.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mainpage.css">
 </head>
 
 <body>
-
-  <header>
-    <div class="nav">
-      <div class="leftnav">
-        <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
-      </div>
-      <a href="data.html">Data</a>
-      <a href="arlafarms.html">Arla Farms</a>
-      <a class="active" href="myfarm.html">My Farm</a>
-      <div class="rightnav">
-        <a href="data.html">Questions</a>
-        <a href="data.html">Flag</a>
-        <a href="data.html">Logout</a>
-      </div>
-
+  <nav>
+    <div class="leftnav">
+      <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
     </div>
-  </header>
+    <div class="centernav">
+    <a href="subpages/data.html">Data</a>
+    <a href="subpages/arlafarms.html">Arla Farms</a>
+    <a href="subpages/myfarm.html">My Farm</a>
+    </div>
+    <div class="rightnav">
+      <a href="data.html">Questions</a>
+      <a href="data.html">Flag</a>
+      <a href="subpages/login.html">Logout</a>
+    </div>
+
+  </nav>
+
 
 <main class="main_container">
   <section class="banner_container">
@@ -50,7 +51,6 @@
   </div>
   </section>
 
-</main>
 
  <div id="myModal" class="onboarding">
         <div class="modal-content">
@@ -62,7 +62,9 @@
     </div>
 
 
-  
+  <!-- Firebase App SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
   <!--- Load chart.js from CDN --->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <!-- load firebase config -->

@@ -1,0 +1,125 @@
+body {
+    overflow: hidden;
+    }
+
+#scene img {
+    display: flex;
+    position: absolute;
+    height: auto;
+}
+
+/*sun*/
+#scene img:nth-of-type(1) {
+    top: 10vh !important;
+    left: -25vw !important;
+    width: 150vw;
+    z-index: 1;
+}
+
+/*hills*/
+#scene img:nth-of-type(2) {
+    top: 35vh !important;
+    left: 10vw !important;
+    width: 110vw;
+    z-index: 2;
+}
+
+#scene img:nth-of-type(3) {
+    top: 40vh !important;
+    left: -50vw !important;
+    width: 180vw;
+    z-index: 3;
+}
+
+#scene img:nth-of-type(4) {
+    top: 50vh !important;
+    left: -10vw !important;
+    width: 150vw;
+    z-index: 4;
+}
+
+#scene img:nth-of-type(5) {
+    top: 55vh !important;
+    left: -30vw !important;
+    width: 150vw;
+    z-index: 5;
+}
+
+#scene img:nth-of-type(6) {
+    top: 70vh !important;
+    left: -30vw !important;
+    width: 160vw;
+    z-index: 6;
+}
+
+/*logo*/
+#scene img:nth-of-type(7) {
+    top: 3vh !important;
+    left: 45vw !important;
+    width: 10vw;
+    z-index: 7;
+}
+
+/*login section*/
+#login {
+    position: absolute;
+    z-index: 10;
+    top: 35vh;
+    left: 37.5vw;
+    width: 25vw;
+    height: 65vh;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background: #fff;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.42);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5vh;
+ 
+
+}
+
+
+#login input {
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #4e985b;
+    width: 70%;
+    height: 13%;
+    margin: 2vh auto;
+    padding-left: 2vh;
+    font-family: "Arla InterFace";
+    font-weight: normal;
+    font-size: 3vh;
+    text-align: left;
+    color: #4e985b;
+}
+
+#login button {
+    border-radius: 10px;
+    background: #006a38;
+    width: 50%;
+    border: none;
+    box-shadow: none;
+    margin: 5vh auto;
+    height: 10%;
+    font-family: "Arla InterFace";
+    font-weight: bold;
+    font-size: 3vh;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+#login a {
+    font-family: "Arla InterFace";
+    font-weight: normal;
+    font-size: 3vh;
+    text-align: left;
+    color: #006a38;
+    text-decoration: none;
+    margin: 0 auto;
+
+}

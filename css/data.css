@@ -1,64 +1,95 @@
-* {
-  line-height: 1.2;
-  margin: 0;
+:root {
+  --dark-green: #006A38;
+  --light-green: #579755;
+  --blue-green: #ACDAC2;
+  --dark-grey: #3A4443;
+  --light-grey: #D5DED7;
 }
 
-html {
-  color: #333;
-  display: table;
-  font-family: Helvetica, Arial, sans-serif;
-  height: 100%;
-  text-align: center;
-  width: 100%;
-  font-weight: 200;
+
+#farm-navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
 }
 
-h1 {
-  font-size: 2em;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin: 1em 0;
+#farm1 {
+  width: 50vw;
+  background-color: var(--dark-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h2 {
-  font-size: 1.8em;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin: 2.5em 0 1em;
-}
-/*------ Graphs ------*/
-canvas {
-  max-width: 80%;
-  margin: 2em auto;
+#farm2 {
+  width: 50vw;
+  background-color: var(--dark-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*------ Navigation bar ------*/
-
-.nav {
-  background-color: #333;
-  overflow: hidden;
-  padding: 2%;
-}
-.nav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1em;
-}
-.leftnav img {
-  width: 5%;
-  float:left;
+aside {
+  width: 15vw;
+  background-color: var(--blue-green);
+  height: 93vh;
 }
 
-.rightnav {
-  float:right;
+main {
+  display: flex;
 }
 
-.nav a:hover {
-  color: black;
+#data-input-container {
+  width: 85vw;
 }
 
-.nav a.active {
-  color: #4CAF50;
+@media only screen and (max-width: 400px) {
+
+  .centernav,
+  .rightnav,
+  aside,
+  #farm-navigation {
+    display: none;
+  }
+
+  #data-input-container {
+    width: 100vw;
+  }
+
+
+  /* navigation */
+
+  #farm-navigation-mobile {
+    display: flex;
+    width: 100vw;
+    background-color: var(--dark-green);
+    color: #fff;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #data-categories-mobile {
+    background-color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+  }
+
+  select {
+    /* appearance: none; */
+    border: none;
+    background-color: var(--dark-green);
+    color: #fff;
+    text-align-last: center;
+  }
+
+  #data-categories-mobile select {
+    background-color: var(--light-grey);
+    color: #000;
+    border: none;
+    width: 25vw;
+  }
+
 }
