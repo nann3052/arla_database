@@ -26,6 +26,7 @@ h2 {
   letter-spacing: 3px;
   margin: 2.5em 0 1em;
 }
+
 /*------ Graphs ------*/
 canvas {
   max-width: 80%;
@@ -39,6 +40,7 @@ canvas {
   overflow: hidden;
   padding: 2%;
 }
+
 .nav a {
   color: #f2f2f2;
   text-align: center;
@@ -46,13 +48,14 @@ canvas {
   text-decoration: none;
   font-size: 1em;
 }
+
 .leftnav img {
   width: 5%;
-  float:left;
+  float: left;
 }
 
 .rightnav {
-  float:right;
+  float: right;
 }
 
 .nav a:hover {
@@ -61,4 +64,29 @@ canvas {
 
 .nav a.active {
   color: #4CAF50;
+}
+
+
+/*Goals section*/
+#goals {
+  background-image: url(../img/cowspot.png);
+  background-position: center;
+  background-size: cover;
+  width: 120vw;
+  margin-left: -10vw;
+  height: 220vh;
+  display: flex;
+  margin-top: 20vh;
+}
+
+#goals h1 {
+ font-family: "Arla InterFace";
+ font-weight: bold;
+ font-size: 6vh;
+ text-align: center;
+ color: #fff;
+ margin: 30vh auto;
+
+
+
 }
