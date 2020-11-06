@@ -82,3 +82,12 @@ nav a:hover {
 nav a.active {
   color: #4CAF50;
 }
+
+@media only screen and (max-width: 400px) {
+
+  .centernav,
+  .rightnav,
+  aside {
+    display: none;
+  }
+}
