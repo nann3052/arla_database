@@ -56,14 +56,40 @@ main {
     width: 100vw;
   }
 
+
+  /* navigation */
+
   #farm-navigation-mobile {
-    display: block;
+    display: flex;
     width: 100vw;
     background-color: var(--dark-green);
     color: #fff;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
   }
 
   #data-categories-mobile {
     background-color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
   }
+
+  select {
+    /* appearance: none; */
+    border: none;
+    background-color: var(--dark-green);
+    color: #fff;
+    text-align-last: center;
+  }
+
+  #data-categories-mobile select {
+    background-color: var(--light-grey);
+    color: #000;
+    border: none;
+    width: 25vw;
+  }
+
 }
