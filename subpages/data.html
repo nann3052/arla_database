@@ -25,7 +25,7 @@
     <div class="rightnav">
       <a href="data.html">Questions</a>
       <a href="data.html">Flag</a>
-      <a href="data.html">Logout</a>
+      <a href="login.html">Logout</a>
     </div>
 
   </nav>
@@ -38,9 +38,36 @@
   </aside>
   <div id="data-input-container">
     <div id="farm-navigation">
-    <div id="farm1"><h2>NØRBYGÅRD - 56654</h2></div>
-    <div id="farm2"><h2>ØGÅRDEN - 99833</h2></div>
-  </div>
+      <div id="farm1"><h2>NØRBYGÅRD - 56654</h2></div>
+      <div id="farm2"><h2>ØGÅRDEN - 99833</h2></div>
+    </div>
+    <div id="farm-navigation-mobile">
+      <form>
+        <select>
+          <option>NØRBYGÅRD - 56654</option>
+          <option>ØGÅRDEN - 99833</option>
+        </select>
+      </form>
+      <!-- <div id="farm1-mobile"><h2>NØRBYGÅRD - 56654</h2></div> -->
+      <!-- <div id="farm2"><h2>ØGÅRDEN - 99833</h2></div> -->
+    </div>
+    <div id="data-categories-mobile">
+       <form>
+        <select>
+          <option>Cows</option>
+          <option>Herd</option>
+          <option>Energy</option>
+          <option>Diesel</option>
+          <option>Electricity and heating</option>
+          <option>Digestion</option>
+          <option>Imported feed</option>
+          <option>Carbon footprint</option>
+        </select>
+      </form>
+      <!-- <h3>Cows</h3> -->
+      <!-- <h3>Milk</h3>
+      <h3>Herd</h3> -->
+    </div>
   <form>
     <label for="drymatter">kg dry matter pr year-cow</label><br>  
     <input type="text" id="drymatter" name="drymatter"><br>

@@ -3,6 +3,7 @@
   --light-green: #579755;
   --blue-green: #ACDAC2;
   --dark-grey: #3A4443;
+  --light-grey: #D5DED7;
 }
 
 
@@ -40,4 +41,55 @@ main {
 
 #data-input-container {
   width: 85vw;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .centernav,
+  .rightnav,
+  aside,
+  #farm-navigation {
+    display: none;
+  }
+
+  #data-input-container {
+    width: 100vw;
+  }
+
+
+  /* navigation */
+
+  #farm-navigation-mobile {
+    display: flex;
+    width: 100vw;
+    background-color: var(--dark-green);
+    color: #fff;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #data-categories-mobile {
+    background-color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+  }
+
+  select {
+    /* appearance: none; */
+    border: none;
+    background-color: var(--dark-green);
+    color: #fff;
+    text-align-last: center;
+  }
+
+  #data-categories-mobile select {
+    background-color: var(--light-grey);
+    color: #000;
+    border: none;
+    width: 25vw;
+  }
+
 }
