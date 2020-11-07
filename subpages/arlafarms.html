@@ -13,23 +13,51 @@
 
 <body>
   <nav>
-    <div class="leftnav">
-      <a href="/index.html"><img src="/img/arla_logo.png" alt="arla logo"></a>
+    <!---Mobile navigation--->
+
+    <div class="mobile-nav">
+      <div class="content">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li><a href="/index.html">Home</li>
+              <li><a href="/subpages/data.html">Data</a></li>
+              <li><a href="/subpages/arlafarms.html">Arla Farms</a></li>
+              <li><a href="/subpages/myfarm.html">My Farm</a></li>
+              <li><a href="/subpages/settings.html">Help</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-    <div class="centernav">
-    <a href="data.html">Data</a>
-    <a class="active" href="arlafarms.html">Arla Farms</a>
-    <a href="myfarm.html">My Farm</a>
+
+    <!---Mobile navigation ends--->
+
+    <!----Desktop navigation--->
+    <div class="desktop-nav">
+      <div class="leftnav">
+        <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
+      </div>
+      <div class="centernav">
+        <a href="subpages/data.html">Data</a>
+        <a href="subpages/arlafarms.html">Arla Farms</a>
+        <a href="subpages/myfarm.html">My Farm</a>
+      </div>
+      <div class="rightnav">
+        <a href="data.html">Questions</a>
+        <a href="data.html">Flag</a>
+        <a href="subpages/login.html">Logout</a>
+      </div>
     </div>
-    <div class="rightnav">
-      <a href="data.html">Questions</a>
-      <a href="data.html">Flag</a>
-      <a href="login.html">Logout</a>
-    </div>
+    <!---Desktop navigation ends--->
 
   </nav>
 
-    <h1>Arla Farms</h1>
+  <h1>Arla Farms</h1>
 
   <h2>Herd - Number of Cows</h2>
   <canvas id="cows"></canvas>
