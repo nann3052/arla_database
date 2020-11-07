@@ -46,11 +46,6 @@ p {
   letter-spacing: 0;
 }
 
-/*------ Graphs ------*/
-canvas {
-  max-width: 80%;
-  margin: 2em auto;
-}
 
 
 
@@ -72,7 +67,6 @@ canvas {
 
 .banner_content {
   position: absolute;
-  z-index: 2;
   color: white;
   margin: 0 1em;
   text-shadow: 1px 1px 2px black;
@@ -102,6 +96,7 @@ canvas {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 .onboarding_logo {

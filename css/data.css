@@ -7,7 +7,7 @@
 }
 
 
-#farm-navigation {
+/* #farm-navigation {
   display: flex;
   justify-content: space-between;
   height: 8vh;
@@ -41,52 +41,104 @@ main {
 
 #data-input-container {
   width: 85vw;
+} */
+
+
+#farm-navigation {
+  display: none;
 }
 
-@media only screen and (max-width: 400px) {
+#data-input-container {
+  width: 100vw;
+}
 
-  #farm-navigation {
-    display: none;
-  }
+aside {
+  display: none;
+}
 
-  #data-input-container {
-    width: 100vw;
-  }
+/* navigation */
+
+#farm-navigation-mobile {
+  display: flex;
+  width: 100vw;
+  background-color: var(--dark-green);
+  color: #fff;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#data-categories-mobile {
+  background-color: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+}
+
+select {
+  /* appearance: none; */
+  border: none;
+  background-color: var(--dark-green);
+  color: #fff;
+  text-align-last: center;
+}
+
+#data-categories-mobile select {
+  background-color: var(--light-grey);
+  color: #000;
+  border: none;
+  width: 25vw;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: var(--light-grey);
+  color: #000;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--light-grey);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 25vw;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
 
 
-  /* navigation */
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
 
-  #farm-navigation-mobile {
-    display: flex;
-    width: 100vw;
-    background-color: var(--dark-green);
-    color: #fff;
-    height: 6vh;
-    align-items: center;
-    justify-content: center;
-  }
+/* page styling */
 
-  #data-categories-mobile {
-    background-color: var(--light-grey);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4vh;
-  }
-
-  select {
-    /* appearance: none; */
-    border: none;
-    background-color: var(--dark-green);
-    color: #fff;
-    text-align-last: center;
-  }
-
-  #data-categories-mobile select {
-    background-color: var(--light-grey);
-    color: #000;
-    border: none;
-    width: 25vw;
-  }
-
+#next {
+  margin-top: 3vh;
+  padding: 1.5vh 10vw;
+  background-color: var(--dark-green);
+  border: none;
+  color: #fff;
 }
