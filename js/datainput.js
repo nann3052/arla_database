@@ -19,5 +19,3 @@ window.onclick = function(event) {
 }
 
 // dropdown content change depending on the page
-
-console.log(location.hash.slice(1));
