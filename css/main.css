@@ -13,6 +13,41 @@
   --light-grey: #D5DED7;
 }
 
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Blk.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Bd.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Rg.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Lt.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arla InterFace";
+  src: url("../fonts/ArlaIF_Th.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
 html {
   color: #333;
   display: table;
@@ -69,15 +104,17 @@ canvas {
 a {
   text-decoration: none;
   color: #1E1E23;
-  opacity:1;
+  opacity: 1;
   font-family: 'work sans', sans serif;
   font-size: 1.5em;
   font-weight: 400;
   transition: 200ms;
 }
+
 a:hover {
-  opacity:0.5;
+  opacity: 0.5;
 }
+
 ul {
   padding: 0;
   list-style-type: none;
@@ -86,11 +123,12 @@ ul {
 
 
 .container {
-  margin-top: 50px; 
+  margin-top: 50px;
   Display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .phone {
   background-color: #36383F;
   border-radius: 40px;
@@ -100,6 +138,7 @@ ul {
   align-items: center;
   box-shadow: 30px 50px 100px #85888C;
 }
+
 .content {
   border: 1px solid #36383F;
   border-radius: 20px;
@@ -108,6 +147,7 @@ ul {
   background-color: #F5F6FA;
   overflow: hidden;
 }
+
 .mobile-nav {
   background-color: #1E1E23;
   height: 65px;
@@ -125,8 +165,7 @@ ul {
   user-select: none;
 }
 
-#menuToggle input
-{
+#menuToggle input {
   display: flex;
   width: 40px;
   height: 32px;
@@ -136,8 +175,7 @@ ul {
   z-index: 2;
 }
 
-#menuToggle span
-{
+#menuToggle span {
   display: flex;
   width: 29px;
   height: 2px;
@@ -147,40 +185,35 @@ ul {
   border-radius: 3px;
   z-index: 1;
   transform-origin: 5px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
   background: #36383F;
 }
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+
+#menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked~span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu
-{
+#menu {
   position: absolute;
   width: 180px;
   height: 400px;
@@ -192,16 +225,14 @@ ul {
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   transition-delay: 2s;
 }
 
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked~ul {
   transform: none;
 }

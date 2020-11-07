@@ -3,41 +3,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Blk.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Bd.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Rg.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Lt.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Th.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
 html {
   color: #333;
   display: table;
@@ -49,10 +14,10 @@ html {
 }
 
 h1 {
+  font-weight: 500;
   font-size: 2em;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin: 1em 0;
+  letter-spacing: 0;
+  margin: 1em 0 0.5em;
 }
 
 h2 {
@@ -63,10 +28,10 @@ h2 {
 }
 
 h3 {
-  font-weight: 500;
   font-size: 2em;
-  letter-spacing: 0;
-  margin: 1em 0 0.5em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 1em 0;
 }
 
 h4 {
@@ -124,35 +89,42 @@ canvas {
   border: 3px white solid;
   background: transparent;
   color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
 
 /*------ Onboarding ------*/
-
+/* The onboarding top bar */
 .onboarding_topbar {
   width: 100%;
   height: 10vh;
-  padding: 2%;
+  padding: 4%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .onboarding_logo {
-  width: 25vw;
+  width: 20vw;
   height: 100%;
 }
 
-/* The Close Button */
+/* The close button */
 .close {
-  color: #333;
-  float: right;
-  font-size: 5em;
+  height: 2.5vh;
   margin: auto 0;
 }
 
+.close_img {
+  margin: auto 0;
+}
+
+/* Onboarding content */
 .onboarding_img {
-  width: 50vw;
+  margin: 3vh 5%;
+  width: 90%;
+  height: 25vh;
+  object-fit: cover;
 }
 
 .onboarding {
@@ -168,16 +140,47 @@ canvas {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: white;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  justify-content: center;
+}
+
+
+.text_content {
+  height: 25vh;
+}
+
+.next {
+  padding: 1em 10vw;
+  width: 50vw;
+  margin: 5vh auto;
+  border: none;
+  border-radius: 8px;
+  background-color: #006A38;
+  color: white;
+}
+
+.progress_img {
+  width: 15vw;
+  height: 1.5vh;
+  margin: 0 auto;
 }
 
 /*------ Goals Section ------*/
+
+.goals_container {
+  background-color: white;
+}
 
 .goals_headline {
   text-decoration: none;
   color: #333;
   margin-top: 1em;
+  font-family: 'Arla InterFace',
+    sans-serif;
 }
 
 .goals_icons {
