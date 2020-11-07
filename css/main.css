@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
   
 }
 
@@ -53,13 +52,12 @@
 html {
   color: #333;
   display: table;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Arla InterFace', sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
   font-weight: 200;
 }
-
 
 /*------ Navigation bar desktop ------*/
 .desktop-nav {
@@ -116,7 +114,9 @@ ul {
   padding: 0;
 }
 
-
+.nav-1 {
+  overflow-y: hidden;
+}
 
 
 .mobile-nav {
@@ -198,7 +198,6 @@ ul {
 #menu
 {
   position: absolute;
-  overflow: hidden;
   width: 90vw;
   height: 100vh;
   box-shadow: 0 0 10px #85888C;

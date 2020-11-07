@@ -38,15 +38,6 @@
   font-style: normal;
 }
 
-html {
-  color: #333;
-  display: table;
-  font-family: 'Arla InterFace', sans-serif;
-  height: 100%;
-  text-align: center;
-  width: 100%;
-  font-weight: 200;
-}
 
 h1 {
   font-size: 2em;
@@ -131,6 +122,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 .onboarding_logo {
