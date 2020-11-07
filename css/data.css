@@ -132,3 +132,13 @@ select {
 .show {
   display: block;
 }
+
+/* page styling */
+
+#next {
+  margin-top: 3vh;
+  padding: 1.5vh 10vw;
+  background-color: var(--dark-green);
+  border: none;
+  color: #fff;
+}
