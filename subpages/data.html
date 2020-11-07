@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/data.css">
 </head>
-
+<body onhashchange="pageChange()">
 <nav>
   <!---Mobile navigation--->
 
@@ -40,7 +40,7 @@
   <!----Desktop navigation--->
   <div class="desktop-nav">
     <div class="leftnav">
-      <a href="index.html"><img src="img/arla_logo.png" alt="arla logo"></a>
+      <a href="index.html"><img src="/img/arla_logo.png" alt="arla logo"></a>
     </div>
     <div class="centernav">
       <a href="subpages/data.html">Data</a>
@@ -79,43 +79,29 @@
           <option>ØGÅRDEN - 99833</option>
         </select>
       </form>
-      <!-- <div id="farm1-mobile"><h2>NØRBYGÅRD - 56654</h2></div> -->
-      <!-- <div id="farm2"><h2>ØGÅRDEN - 99833</h2></div> -->
     </div>
     <div id="data-categories-mobile">
-
+      
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <button onclick="dropdown()" class="dropbtn">Selected item</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="#cows">Cows</a>
           <a href="#herd">Herd</a>
           <a href="#energy">Energy</a>
+          <a href="#diesel">Diesel</a>
+          <a href="#electricity">Electricity & Heating</a>
+          <a href="#digestion">Digestion</a>
+          <a href="#imported-feed">Imported feed</a>
+          <a href="#carbon-footprint">Carbon footprint</a>
         </div>
       </div>
-
-      <!-- <form>
-        <select>
-          <option>Cows</option>
-         <option>Herd</option>
-          <option>Energy</option>
-          <option>Diesel</option>
-          <option>Electricity and heating</option>
-          <option>Digestion</option>
-          <option>Imported feed</option>
-          <option>Carbon footprint</option>
-        </select>
-      </form> -->
-      <!-- <h3>Cows</h3> -->
-      <!-- <h3>Milk</h3>
-      <h3>Herd</h3> -->
     </div>
 
   </div>
 
-
-</main>
 <!-- pages -->
 <section id="cows" class="page">
+  <h1>Cows</h1>
   <form>
     <label for="feed_consumption">Feed consumption</label><br>
     <input type="text" id="feed_consumption" name="feed_consumption"><br>
@@ -123,6 +109,7 @@
 </section>
 
 <section id="herd" class="page">
+  <h1>Herd</h1>
   <form>
     <label for="milk_production">Milk production</label><br>
     <input type="text" id="milk_production" name="milk_production"><br>
@@ -135,47 +122,58 @@
 
 
 <section id="energy" class="page">
+  <h1>Energy</h1>
+  <form>
   <label for="diesel">Diesel</label><br>
   <input type="text" id="diesel" name="diesel"><br>
   <label for="electricity">Electricity</label><br>
   <input type="text" id="electricity" name="electricity"><br>
+  </form>
 </section>
 
 
 <section id="diesel" class="page">
-  <label for="carbon_dioxide">Carbon dioxide</label><br>
-  <input type="text" id="carbon_dioxide" name="carbon_dioxide"><br>
+  <h1>Diesel</h1>
+  <form>
+  <label for="carbon_dioxide_diesel">Carbon dioxide</label><br>
+  <input type="text" id="carbon_dioxide_diesel" name="carbon_dioxide_diesel"><br>
+  </form>
 </section>
 
 <section id="electricity" class="page">
-  <label for="carbon_dioxide">Carbon dioxide</label><br>
-  <input type="text" id="carbon_dioxide" name="carbon_dioxide"><br>
+  <h1>Electricity and heating</h1>
+  <form>
+  <label for="carbon_dioxide_electricity">Carbon dioxide</label><br>
+  <input type="text" id="carbon_dioxide_electricity" name="carbon_dioxide_electricity"><br>
+  </form>
+  <h1>adfgsh</h1>
 </section>
 
 <section id="digestion" class="page">
+  <h1>Digestion</h1>
+  <form>
   <label for="methane">Methane</label><br>
   <input type="text" id="methane" name="methane"><br>
+  </form>
 </section>
 
 <section id="imported-feed" class="page">
-  <label for="carbon_dioxide">Carbon dioxide</label><br>
-  <input type="text" id="carbon_dioxide" name="carbon_dioxide"><br>
+  <h1>Imported feed</h1>
+  <form>
+  <label for="carbon_dioxide_imported">Carbon dioxide</label><br>
+  <input type="text" id="carbon_dioxide_imported" name="carbon_dioxide_imported"><br>
+  </form>
 </section>
 
 <section id="carbon-footprint" class="page">
-  <label for="carbon_dioxide">Carbon dioxide</label><br>
-  <input type="text" id="carbon_dioxide" name="carbon_dioxide"><br>
+  <h1>Carbon footprint</h1>
+  <form>
+  <label for="carbon_dioxide_footprint">Carbon dioxide</label><br>
+  <input type="text" id="carbon_dioxide_footprint" name="carbon_dioxide_footprint"><br>
+  </form>
 </section>
+</main>
 
-
-
-<!-- Firebase App SDKs -->
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
-<!--- Load chart.js from CDN --->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<!-- load firebase config -->
-<script src="/js/firebase_config.js"></script>
 <!-- main js file -->
 <script src="/js/main.js"></script>
 <!-- SPA functionality  -->

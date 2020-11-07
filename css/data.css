@@ -95,12 +95,12 @@ select {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
+  background-color: var(--light-grey);
+  color: #000;
   font-size: 16px;
   border: none;
   cursor: pointer;
+
 }
 
 /* Dropdown button on hover & focus */
@@ -113,24 +113,26 @@ select {
 .dropdown {
   position: relative;
   display: inline-block;
+
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: var(--light-grey);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  width: 25vw;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 6px 10px;
   text-decoration: none;
   display: block;
+  font-size: 16px;
 }
 
 /* Change color of dropdown links on hover */
