@@ -49,40 +49,6 @@
   --light-grey: #D5DED7;
 }
 
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Blk.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Bd.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Rg.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Lt.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arla InterFace";
-  src: url("../fonts/ArlaIF_Th.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
 
 html {
   color: #333;
@@ -157,7 +123,7 @@ ul {
   justify-content: right;
   align-items: center;
   z-index: 3;
-  overflow: hidden;
+  
 
 
 }
