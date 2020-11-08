@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 
-<header>
+<body>
+
   <nav>
     <!---Mobile navigation--->
 
@@ -59,20 +60,20 @@
   </nav>
 </header>
 
-<body>
-
   <main class="main_container">
+<!----Banner container--->
     <section class="banner_container">
       <div class="banner_content">
-        <h3 class="banner_headline">Welcome Rasmus!</h3>
+        <h1 class="banner_headline">Welcome Rasmus!</h1>
         <p class="banner_text">Your quarterly sustainability report is ready to be filled out.</p>
         <p class="banner_text">Help Arla pave the way to a more sustainable dairy production today!</p>
         <button onclick="location.href='subpages/data.html'" type="button" class="banner_btn">GET STARTED NOW</button>
       </div>
     </section>
 
+<!----Goals container--->
     <section class="goals_container">
-      <h4><a href="subpages/myfarm.html" class="goals_headline">Goals</a></h4>
+      <h4><a href="subpages/myfarm.html" class="goals_headline">GOALS</a></h4>
       <div class="goals_icons">
         <img src="img/eye_icon.png" class="goals_img" alt="eye">
         <img src="img/hay.png" class="goals_img" alt="hay">
@@ -81,19 +82,57 @@
       </div>
     </section>
 
-
-    <div id="myModal" class="onboarding">
-      <div class="modal-content">
-        <div class="onboarding_topbar">
-          <img src="img/arla_logo.png" class="onboarding_logo" alt="arla logo">
-          <span class="close">&times;</span>
-        </div>
-        <img src="img/onboarding_img.png" class="onboarding_img">
-        <img src="img/onboarding_img.png" class="onboarding_img">
-        <h1>Welcome to Arla Farmers Database</h1>
+<!--- Onboarding Modal --->
+<section class="overlay" id="myOnboarding">
+  <div class="modal-content">
+    <div class="onboarding_topbar">
+      <img src="img/arla_logo.png" class="onboarding_logo" alt="arla logo">
+        <span class="close"><img src="img/close.png" class="close_img" alt="cross"></span>
+    </div>
+    <!--- Modal bottom layer --->
+    <div id="myModal1" class="onboarding">
+      <img src="img/onboarding_img3.png" class="onboarding_img">
+        <div class="text_content">
+        <h3 class="onboarding_headline">See your Statistics</h3>
+        <p class="onboarding_text">Once you have provided us with enough information, we are able to convert your 
+          data into statistics and make it easy for you to track your sustainability progress.</p>
+          </div>
+      <div class="progress_content">
+        <button onclick="onBoardingBtn1()" type="button" class="next">GET STARTED</button>
+        <img src="img/progress3.png" class="progress_img" alt="progress dots">
       </div>
     </div>
 
+    <!--- Modal middle layer --->
+    <div id="myModal2" class="onboarding">
+      <img src="img/onboarding_img2.png" class="onboarding_img">
+        <div class="text_content">
+        <h3 class="onboarding_headline">Input your Data</h3>
+        <p class="onboarding_text">You have to do to help is fill out your data report 4 times a year. As a thanks we will provide 
+          you with an overview of your data and carbon footprint as well as an bonus of 1 eurocent per kilo milk.</p>
+          </div>
+      <div class="progress_content">
+        <button onclick="onBoardingBtn2()" type="button" class="next">NEXT</button>
+        <img src="img/progress2.png" class="progress_img" alt="progress dots">
+      </div>
+    </div>
+
+    <!--- Modal top layer --->
+    <div id="myModal3" class="onboarding">
+      <img src="img/onboarding_img1.png" class="onboarding_img">
+        <div class="text_content">
+        <h3 class="onboarding_headline">Welcome to Arla Farmers Database</h3>
+        <p class="onboarding_text">Thank you for helping Arla pave the way for a more 
+          sustainable dairy production! Click next to learn more.</p>
+          </div>
+      <div class="progress_content">
+        <button onclick="onBoardingBtn3()" type="button" class="next">NEXT</button>
+        <img src="img/progress1.png" class="progress_img" alt="progress dots">
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
 
     <!-- Firebase App SDKs -->
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>

@@ -1,5 +1,5 @@
 // Get the modal
-let modal = document.getElementById("myModal");
+let modal = document.getElementById("myOnboarding");
 
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
@@ -14,4 +14,17 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+// When the user clicks the button the current layer will be removed //
+function onBoardingBtn1() {
+  document.getElementById("myOnboarding").style.display = "none";
+}
+
+function onBoardingBtn2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+
+function onBoardingBtn3() {
+  document.getElementById("myModal3").style.display = "none";
 }
