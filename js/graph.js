@@ -56,19 +56,27 @@ function prepareData(data) {
 // seperating the objects to arrays: dates and infected
 function prepareData(data) {
   // declaring two array to store the data 
-  let dates = [];
-  let infected = [];
+  let year1 = [];
+  let year2 = [];
+  let year3 = [];
+  let year4 = [];
   // looping through the data array
   for (const object of data) {
     // adding the values to the different arrays
-    dates.push(object.date);
-    infected.push(object.numberOfInfected);
+    year1.push(object.year1);
+    year2.push(object.year2);
+    year3.push(object.year3);
+    year4.push(object.year4);
+    year5.push(object.year5);
   }
   // returning the two arrays inside and object
   // we cannot return to values - that's why we have to do it inside an array
   return {
-    dates,
-    infected
+    year1,
+    year2,
+    year3,
+    year4,
+    year5
   };
 }
 
