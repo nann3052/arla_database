@@ -1,6 +1,6 @@
 "use strict";
 
-//1: data
+/* Fetch the data(no json)
 let _data = [{
   year: "year1",
   numberOfCows: 51
@@ -17,8 +17,22 @@ let _data = [{
   year: "year5",
   numberOfCows: 50
 }];
+*/
 
-// 2: Prepare data 
+// 1: data
+// Array of objects
+let _data = [];
+
+async function getData() {
+  let response = await fetch("json/alldata.json");
+  _data = await response.json();
+  appendChart();
+};
+
+getData();
+
+
+/* Prepare data in arrays (no json)
 function prepareData(data) {
   let cows = [];
   let years = [];
@@ -35,16 +49,39 @@ function prepareData(data) {
     years
   }
 }
+*/
 
-// 3: Append the chart
+
+// 2: prepare data for chart
+// seperating the objects to arrays: dates and infected
+function prepareData(data) {
+  // declaring two array to store the data 
+  let dates = [];
+  let infected = [];
+  // looping through the data array
+  for (const object of data) {
+    // adding the values to the different arrays
+    dates.push(object.date);
+    infected.push(object.numberOfInfected);
+  }
+  // returning the two arrays inside and object
+  // we cannot return to values - that's why we have to do it inside an array
+  return {
+    dates,
+    infected
+  };
+}
+
+
+// Appending the chart to the HTML
 function appendChart(data) {
   let chartData = prepareData(data);
-  // console.log(chartData);
+  console.log(chartData)
 
   // generate chart
   let chartContainer = document.getElementById('cows');
   let chart = new Chart(chartContainer, {
-    type: 'line',
+    type: 'bar',
     data: {
       datasets: [{
         data: chartData.cows,
