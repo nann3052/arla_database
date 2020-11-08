@@ -215,3 +215,16 @@ ul {
 #menuToggle input:checked~ul {
   transform: translate(-65%, 0);
 }
+
+/*------ Media Query at desktop -----*/
+
+@media only screen and (min-width: 768px) {
+   /*------ Navigation to desktop-------*/
+  .desktop-nav {
+  display: inline;
+}
+ .mobile-nav {
+  display: none;
+}
+
+}
