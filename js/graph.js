@@ -1,6 +1,6 @@
 "use strict";
 
-/* Fetch the data(no json)
+// Fetch the data(no json)
 let _data = [{
   year: "year1",
   numberOfCows: 51
@@ -17,8 +17,8 @@ let _data = [{
   year: "year5",
   numberOfCows: 50
 }];
-*/
 
+/*
 // 1: data
 // Array of objects
 let _data = [];
@@ -30,9 +30,9 @@ async function getData() {
 };
 
 getData();
+*/
 
-
-/* Prepare data in arrays (no json)
+//Prepare data in arrays (no json)
 function prepareData(data) {
   let cows = [];
   let years = [];
@@ -49,9 +49,9 @@ function prepareData(data) {
     years
   }
 }
-*/
 
 
+/*
 // 2: prepare data for chart
 // seperating the objects to arrays: dates and infected
 function prepareData(data) {
@@ -79,7 +79,7 @@ function prepareData(data) {
     year5
   };
 }
-
+*/
 
 // Appending the chart to the HTML
 function appendChart(data) {
