@@ -19,3 +19,15 @@ window.onclick = function(event) {
 }
 
 // dropdown content change depending on the page
+
+// data validation
+
+function validateForm() {
+  let x = document.forms["cows"]["feed_consumption"].value;
+  if (x == " ") {
+    alert("Cow must be filled out");
+    console.log("no");
+    return false;
+  }
+}
+
