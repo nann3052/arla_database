@@ -65,33 +65,44 @@ html {
   display: none;
 }
 
-.desktop-nav {
-  background-color: #333;
-  padding: 2%;
-}
-
 .desktop-nav a {
 color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1em;
+
+}
+
+.leftnav {
+  width: 5vw;
 }
 
 .leftnav img {
-  width: 5%;
-  float: left;
+  width: 100%;
+  margin: 0;
+
 }
+
+.centernav {
+  width: 50%;
+  margin: 0;
+  text-align: center;
+}
+
 
 .rightnav {
-  float: right;
+ width: 40%;
+ margin: 0;
+ padding: 0;
 }
 
-.nav a:hover {
-  color: black;
+
+.desktop-nav a:hover {
+  color: #3A4443;
 }
 
-.nav a.active {
+.desktop-nav a.active {
   color: #4CAF50;
 }
 
@@ -99,16 +110,12 @@ color: #f2f2f2;
 
 a {
   text-decoration: none;
-  color: #1E1E23;
+  color: #3A4443;
   opacity: 1;
   font-family: 'Arla InterFace', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
   transition: 200ms;
-}
-
-a:hover {
-  opacity: 0.5;
 }
 
 ul {
@@ -117,14 +124,12 @@ ul {
 }
 
 .mobile-nav {
-  background-color: #1E1E23;
+  background-color: #3A4443;
   height: 60px;
   Display: flex;
   justify-content: right;
   align-items: center;
   z-index: 3;
-  
-
 
 }
 
@@ -221,7 +226,14 @@ ul {
 @media only screen and (min-width: 768px) {
    /*------ Navigation to desktop-------*/
   .desktop-nav {
-  display: inline-block;
+  
+  background-color: #3A4443;
+  padding: 2%;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+   margin: 0;
+
 }
  .mobile-nav {
   display: none;
