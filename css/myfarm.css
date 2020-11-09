@@ -76,17 +76,53 @@ canvas {
   margin-left: -10vw;
   height: 220vh;
   display: flex;
+  flex-direction: column;
   margin-top: 20vh;
 }
 
 #goals h1 {
- font-family: "Arla InterFace";
- font-weight: bold;
- font-size: 6vh;
- text-align: center;
- color: #fff;
- margin: 30vh auto;
+  font-weight: 300;
+  font-size: 8vh;
+  text-align: center;
+  color: #fff;
+  margin: 30vh auto 0 auto;
 
+}
 
+#goals div {
+  display: flex;
+  flex-direction: row;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 5vh auto 0;
+}
 
+#goals div div {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+#goals div div img {
+  height: auto;
+  border: 1vh solid #579755;
+  border-radius: 50%;
+  width: 60%;
+  margin: 0 auto;
+  
+}
+
+#goals div div h2{
+font-size: 3vh;
+}
+
+#goals div div h3 {
+  font-size: 2.5vh;
+}
+
+#goals div div p {
+  font-size: 2vh;
 }
