@@ -64,13 +64,18 @@
     <!---Desktop navigation ends--->
 
   </nav>
-
+  <div id="container">
+  <aside>
+      <a href="#Cows">Cows</a>
+      <a href="#Herd">Herd</a>
+      <a href="#Energy">Energy</a>
+      <a href="#Diesel">Diesel</a>
+      <a href="#Electricity-&-Heating">Electricity & Heating</a>
+      <a href="#Digestion">Digestion</a>
+      <a href="#Imported-feed">Imported feed</a>
+      <a href="#Carbon-footprint">Carbon footprint</a>
+  </aside>
   <main>
-    <aside>
-      <h3>Cows</h3>
-      <h3>Milk</h3>
-      <h3>Herd</h3>
-    </aside>
     <div id="data-input-container">
       <div id="farm-navigation">
         <div id="farm1">
@@ -92,6 +97,7 @@
 
         <div class="dropdown">
           <button onclick="dropdown()" class="dropbtn">Selected item</button>
+          <img src="/img/Icon material-keyboard-arrow-down.svg" id="arrow">
           <div id="myDropdown" class="dropdown-content">
             <a href="#Cows">Cows</a>
             <a href="#Herd">Herd</a>
@@ -106,10 +112,7 @@
       </div>
 
     </div>
-
-  </div>
-
-<!-- pages -->
+    <!-- pages -->
 <section id="Cows" class="page">
   <!-- <h1>Cows</h1>
   <form name="cows" novalidate>
@@ -129,7 +132,7 @@
   </p>
   <!-- Some legacy browsers need to have the `type` attribute
        explicitly set to `submit` on the `button`element -->
-  <button type="submit">Submit</button>
+  <button type="submit" class="next">Next</button>
 </form>
   
 </section>
@@ -213,7 +216,9 @@
 </section>
 
 
-</main>
+  </main>
+  </div>
+
 
 
 
