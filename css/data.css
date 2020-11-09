@@ -222,6 +222,14 @@ input:focus.invalid {
     height: 93vh;
   }
 
+  aside a {
+    margin-top: 4vh;
+  }
+
+  aside a:hover {
+    color: #fff;
+  }
+
   main {
     display: flex;
     flex-direction: column;
