@@ -298,6 +298,7 @@ ul {
     display: flex;
     flex-direction: row;
     margin: 0;
+    width: 100vw;
 
   }
 
