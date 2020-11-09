@@ -9,8 +9,9 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   height: 100%;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   font-weight: 200;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -98,7 +99,6 @@ canvas {
   font-weight: 300;
   text-align: center;
   color: #fff;
-  justify-content: space-between;
   width: 80vw;
   margin: 5vh auto 0;
 }
@@ -107,19 +107,19 @@ canvas {
   display: flex;
   flex-direction: column;
   width: 20vw;
+  height: auto;
 }
 
 #goals div div img {
   height: auto;
-  border: 1vh solid #579755;
-  border-radius: 50%;
-  width: 60%;
+  width: 10vw;
   margin: 0 auto;
-  
+  margin: 2vh auto 3vh auto;
 }
 
-#goals div div h2{
-font-size: 3vh;
+#goals div div h2 {
+  font-size: 3vh;
+  text-transform: uppercase;
 }
 
 #goals div div h3 {
@@ -128,4 +128,5 @@ font-size: 3vh;
 
 #goals div div p {
   font-size: 2vh;
+  line-height: 1.3;
 }
