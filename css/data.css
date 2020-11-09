@@ -195,7 +195,7 @@ input:focus.invalid {
 
   #farm1 {
     width: 50vw;
-    background-color: var(--dark-green);
+    background-color: var(--light-green);
     display: flex;
     justify-content: center;
     align-items: center;
