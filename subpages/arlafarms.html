@@ -6,7 +6,7 @@
   <title>My Farm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="My Farm page">
-  <link rel="shortcut icon" type="image/png" href="img/arla_logo.png" />
+  <link rel="shortcut icon" type="image/png" href="/img/arla_flower.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/arlafarms.css">
@@ -48,8 +48,15 @@
         <a href="/subpages/myfarm.html">My Farm</a>
       </div>
       <div class="rightnav">
-        <a href="">Questions</a>
-        <a href="">Flag</a>
+        <a class="questionmark" href=""><img src="/img/questionmark.png" alt="question"></a>
+        <div class="flag-dropdown">
+          <button onclick="flagFunction()" class="flag-dropbtn"><img src="/img/danishflag.png"
+              alt="danish flag"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#"><img src="/img/ukflag.png" alt="uk flag"></a>
+            <a href="#"><img src="/img/germanflag.png" alt="uk flag"></a>
+          </div>
+        </div>
         <a href="/subpages/login.html">Logout</a>
       </div>
     </div>
@@ -62,8 +69,8 @@
 
   <h1>Arla Farms</h1>
 
-  <h2>Herd - Number of Cows</h2>
-  <canvas id="cows"></canvas>
+  <h2>C02 Emission Denmark </h2>
+  <canvas id="carbon"></canvas>
 
 
 
@@ -71,6 +78,7 @@
   <!--- Load chart.js from CDN --->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <!-- Graph js file -->
+  <script src="/js/main.js"></script>
   <script src="/js/graph.js"></script>
 </body>
 

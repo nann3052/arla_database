@@ -6,8 +6,9 @@
   <title>My Farm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="My Farm page">
-  <link rel="shortcut icon" type="image/png" href="img/arla_flower.png" />
+  <link rel="shortcut icon" type="image/png" href="/img/arla_flower.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
+  <link rel="stylesheet" href="/css/myfarm.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -49,8 +50,15 @@
         <a href="/subpages/myfarm.html">My Farm</a>
       </div>
       <div class="rightnav">
-        <a href="data.html">Questions</a>
-        <a href="data.html">Flag</a>
+        <a class="questionmark" href=""><img src="/img/questionmark.png" alt="question"></a>
+        <div class="flag-dropdown">
+          <button onclick="flagFunction()" class="flag-dropbtn"><img src="/img/danishflag.png"
+              alt="danish flag"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#"><img src="/img/ukflag.png" alt="uk flag"></a>
+            <a href="#"><img src="/img/germanflag.png" alt="uk flag"></a>
+          </div>
+        </div>
         <a href="/subpages/login.html">Logout</a>
       </div>
     </div>
@@ -80,14 +88,12 @@
 
 
 
-  <!-- Firebase App SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
   <!--- Load chart.js from CDN --->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-  <!-- load firebase config -->
-  <script src="/js/firebase_config.js"></script>
+
   <!-- main js file -->
+  <script src="/js/graph.js"></script>
   <script src="/js/main.js"></script>
 </body>
 

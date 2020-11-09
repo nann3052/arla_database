@@ -2,7 +2,15 @@
 
 /*------ Graphs ------*/
 canvas {
-  max-width: 100%;
+  max-width: 80%;
   margin: 2em auto;
 }
 
+h1 {
+  margin-top: 5%;
+  color: #006A38;
+
+}
+h2 {
+  margin-top: 2%;
+}

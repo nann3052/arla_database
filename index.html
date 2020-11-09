@@ -50,18 +50,25 @@
         <a href="subpages/myfarm.html">My Farm</a>
       </div>
       <div class="rightnav">
-        <a href="data.html">Questions</a>
-        <a href="data.html">Flag</a>
+        <a class="questionmark" href=""><img src="img/questionmark.png" alt="question"></a>
+        <div class="flag-dropdown">
+          <button onclick="flagFunction()" class="flag-dropbtn"><img src="img/danishflag.png"
+              alt="danish flag"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#"><img src="img/ukflag.png" alt="uk flag"></a>
+            <a href="#"><img src="img/germanflag.png" alt="uk flag"></a>
+          </div>
+        </div>
         <a href="subpages/login.html">Logout</a>
       </div>
     </div>
     <!---Desktop navigation ends--->
 
   </nav>
-</header>
+  </header>
 
   <main class="main_container">
-<!----Banner container--->
+    <!----Banner container--->
     <section class="banner_container">
       <div class="banner_content">
         <h1 class="banner_headline">Welcome Rasmus!</h1>
@@ -71,7 +78,7 @@
       </div>
     </section>
 
-<!----Goals container--->
+    <!----Goals container--->
     <section class="goals_container">
       <h4><a href="subpages/myfarm.html" class="goals_headline">GOALS</a></h4>
       <div class="goals_icons">
@@ -98,33 +105,35 @@
         <p class="onboarding_text">Once you have provided us with enough information, we are able to convert your 
           data into statistics and make it easy for you to track your sustainability progress.</p>
           </div>
-      <div class="progress_content">
-        <button onclick="onBoardingBtn1()" type="button" class="next">GET STARTED</button>
-        <img src="img/progress3.png" class="progress_img" alt="progress dots">
-      </div>
-    </div>
-
-    <!--- Modal middle layer --->
-    <div id="myModal2" class="onboarding">
-      <img src="img/onboarding_img2.png" class="onboarding_img">
-        <div class="text_content">
-        <h3 class="onboarding_headline">Input your Data</h3>
-        <p class="onboarding_text">You have to do to help is fill out your data report 4 times a year. As a thanks we will provide 
-          you with an overview of your data and carbon footprint as well as an bonus of 1 eurocent per kilo milk.</p>
+          <div class="progress_content">
+            <button onclick="onBoardingBtn1()" type="button" class="next">GET STARTED</button>
+            <img src="img/progress3.png" class="progress_img" alt="progress dots">
           </div>
-      <div class="progress_content">
-        <button onclick="onBoardingBtn2()" type="button" class="next">NEXT</button>
-        <img src="img/progress2.png" class="progress_img" alt="progress dots">
-      </div>
-    </div>
+        </div>
 
-    <!--- Modal top layer --->
-    <div id="myModal3" class="onboarding">
-      <img src="img/onboarding_img1.png" class="onboarding_img">
-        <div class="text_content">
-        <h3 class="onboarding_headline">Welcome to Arla Farmers Database</h3>
-        <p class="onboarding_text">Thank you for helping Arla pave the way for a more 
-          sustainable dairy production! Click next to learn more.</p>
+        <!--- Modal middle layer --->
+        <div id="myModal2" class="onboarding">
+          <img src="img/onboarding_img2.png" class="onboarding_img">
+          <div class="text_content">
+            <h3 class="onboarding_headline">Input your Data</h3>
+            <p class="onboarding_text">You have to do to help is fill out your data report 4 times a year. As a thanks
+              we will provide
+              you with an overview of your data and carbon footprint as well as an bonus of 1 eurocent per kilo milk.
+            </p>
+          </div>
+          <div class="progress_content">
+            <button onclick="onBoardingBtn2()" type="button" class="next">NEXT</button>
+            <img src="img/progress2.png" class="progress_img" alt="progress dots">
+          </div>
+        </div>
+
+        <!--- Modal top layer --->
+        <div id="myModal3" class="onboarding">
+          <img src="img/onboarding_img1.png" class="onboarding_img">
+          <div class="text_content">
+            <h3 class="onboarding_headline">Welcome to Arla Farmers Database</h3>
+            <p class="onboarding_text">Thank you for helping Arla pave the way for a more
+              sustainable dairy production! Click next to learn more.</p>
           </div>
       <div class="progress_content">
         <button onclick="onBoardingBtn3()" type="button" class="next">NEXT</button>
@@ -136,13 +145,9 @@
 </section>
 </main>
 
-    <!-- Firebase App SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
     <!--- Load chart.js from CDN --->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <!-- load firebase config -->
-    <script src="js/firebase_config.js"></script>
+
     <!-- main js file -->
     <script src="js/main.js"></script>
     <!-- modal file -->

@@ -1,24 +1,27 @@
 "use strict";
 
-/* Fetch the data(no json)
+// Fetch the data(no json)
 let _data = [{
   year: "year1",
-  numberOfCows: 51
+  carbonEmission: 51
 }, {
   year: "year2",
-  numberOfCows: 50
+  carbonEmission: 50
 }, {
   year: "year3",
-  numberOfCows: 49
+  carbonEmission: 49
 }, {
   year: "year4",
-  numberOfCows: 51
+  carbonEmission: 51
 }, {
   year: "year5",
-  numberOfCows: 50
+  carbonEmission: 48
+}, {
+  year: "year6",
+  carbonEmission: 47
 }];
-*/
 
+/*
 // 1: data
 // Array of objects
 let _data = [];
@@ -30,54 +33,24 @@ async function getData() {
 };
 
 getData();
+*/
 
-
-/* Prepare data in arrays (no json)
+//Prepare data in arrays (no json)
 function prepareData(data) {
-  let cows = [];
+  let carbon = [];
   let years = [];
 
   for (let object of data) {
-    cows.push(object.numberOfCows);
+    carbon.push(object.carbonEmission);
     years.push(object.year);
   }
-  console.log(cows);
+  console.log(carbon);
   console.log(years);
 
   return {
-    cows,
+    cows: carbon,
     years
   }
-}
-*/
-
-
-// 2: prepare data for chart
-// seperating the objects to arrays: dates and infected
-function prepareData(data) {
-  // declaring two array to store the data 
-  let year1 = [];
-  let year2 = [];
-  let year3 = [];
-  let year4 = [];
-  // looping through the data array
-  for (const object of data) {
-    // adding the values to the different arrays
-    year1.push(object.year1);
-    year2.push(object.year2);
-    year3.push(object.year3);
-    year4.push(object.year4);
-    year5.push(object.year5);
-  }
-  // returning the two arrays inside and object
-  // we cannot return to values - that's why we have to do it inside an array
-  return {
-    year1,
-    year2,
-    year3,
-    year4,
-    year5
-  };
 }
 
 
@@ -87,21 +60,21 @@ function appendChart(data) {
   console.log(chartData)
 
   // generate chart
-  let chartContainer = document.getElementById('cows');
+  let chartContainer = document.getElementById('carbon');
   let chart = new Chart(chartContainer, {
     type: 'bar',
     data: {
       datasets: [{
         data: chartData.cows,
-        label: 'Number of Cows',
+        label: 'Co2 Emission Tons',
         fill: false,
         borderColor: "#e755ba",
-        borderDash: [5, 5],
-        backgroundColor: "#e755ba",
-        pointBackgroundColor: "#55bae7",
-        pointBorderColor: "#55bae7",
-        pointHoverBackgroundColor: "#55bae7",
-        pointHoverBorderColor: "#55bae7",
+        borderDash: [6, 6],
+        backgroundColor: "#006A38",
+        pointBackgroundColor: "#006A38",
+        pointBorderColor: "#006A38",
+        pointHoverBackgroundColor: "#006A38",
+        pointHoverBorderColor: "#006A38",
       }],
       labels: chartData.years
     },
@@ -109,7 +82,7 @@ function appendChart(data) {
       scales: {
         yAxes: [{
           ticks: {
-            min: 45,
+            min: 43,
             max: 55
           }
         }]
