@@ -75,26 +75,31 @@ color: #f2f2f2;
 }
 
 .leftnav {
-  width: 5vw;
+  width:30%;
+  margin-left: 5%;
 }
 
 .leftnav img {
-  width: 100%;
+  width: 80px;
   margin: 0;
+   float: left;
 
 }
 
 .centernav {
-  width: 50%;
+  width: 30%;
   margin: 0;
+  padding-top: 1%;
   text-align: center;
 }
 
 
 .rightnav {
- width: 40%;
+ width: 30%;
  margin: 0;
- padding: 0;
+   padding-top: 1%;
+   text-align: right;
+   float: right;
 }
 
 
@@ -228,7 +233,7 @@ ul {
   .desktop-nav {
   
   background-color: #3A4443;
-  padding: 2%;
+  padding: 1%;
    height: 10vh;
    display: flex;
    flex-direction: row;
