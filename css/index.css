@@ -214,7 +214,7 @@ button {
 @media only screen and (min-width: 768px) {
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -223,6 +223,10 @@ button {
 
   h2 {
     font-size: 2em;
+  }
+
+  h4 {
+    margin: 4vh auto 0;
   }
 
   p {
@@ -312,7 +316,7 @@ button {
 
   #overlay {
     background-color: black;
-    position: absolute;
+    position: fixed;
     z-index: 15;
     opacity: 0.5;
     width: 100%;
@@ -363,5 +367,6 @@ button {
 
   .goals_img {
     width: 80%;
+    margin-bottom: 5vh;
   }
 }
