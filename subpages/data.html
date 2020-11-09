@@ -53,7 +53,7 @@
         <div class="flag-dropdown">
           <button onclick="flagFunction()" class="flag-dropbtn"><img src="/img/danishflag.png"
               alt="danish flag"></button>
-          <div id="myDropdown" class="dropdown-content">
+          <div id="flagDropdown" class="flag-dropdown-content">
             <a href="#"><img src="/img/ukflag.png" alt="uk flag"></a>
             <a href="#"><img src="/img/germanflag.png" alt="uk flag"></a>
           </div>
@@ -107,6 +107,7 @@
 
     </div>
 
+<<<<<<< Updated upstream
     <!-- pages -->
     <section id="Cows" class="page">
       <h1>Cows</h1>
@@ -200,6 +201,110 @@
   <script src="/js/spa.js"></script>
   <!-- data page js file -->
   <script src="/js/datainput.js"></script>
+=======
+  </div>
+
+<!-- pages -->
+<section id="Cows" class="page">
+  <h1>Cows</h1>
+  <form name="cows" onsubmit="validateForm()">
+    <label for="feed_consumption">Feed consumption</label><br>
+    <input type="number" id="feed_consumption" name="feed_consumption"><br>
+    <button type="submit" class="next" >Next</button>
+  </form>
+  
+</section>
+
+<section id="Herd" class="page">
+  <h1>Herd</h1>
+  <form>
+    <label for="milk_production">Milk production</label><br>
+    <input type="number" id="milk_production" name="milk_production"><br>
+    <label for="year_cows">Year-cows</label><br>
+    <input type="number" id="year_cows" name="year_cows"><br>
+    <label for="self_sufficiency">Self-sufficiency in feed</label><br>
+    <input type="number" id="self_sufficiency" name="self_sufficiency"><br>
+    <button type="submit" class="next">Next</button>
+  </form>
+  
+</section>
+
+
+<section id="Energy" class="page">
+  <h1>Energy</h1>
+  <form>
+    <label for="diesel">Diesel</label><br>
+    <input type="number" id="diesel" name="diesel"><br>
+    <label for="electricity">Electricity</label><br>
+    <input type="number" id="electricity" name="electricity"><br>
+    <button type="submit" class="next">Next</button>
+  </form>
+  
+</section>
+
+
+<section id="Diesel" class="page">
+  <h1>Diesel</h1>
+  <form>
+    <label for="carbon_dioxide_diesel">Carbon dioxide</label><br>
+    <input type="number" id="carbon_dioxide_diesel" name="carbon_dioxide_diesel"><br>
+    <button type="submit" class="next">Next</button>
+  </form>
+  
+</section>
+
+<section id="Electricity-&-Heating" class="page">
+  <h1>Electricity and heating</h1>
+  <form>
+    <label for="carbon_dioxide_electricity">Carbon dioxide</label><br>
+    <input type="number" id="carbon_dioxide_electricity" name="carbon_dioxide_electricity"><br>
+    <button type="submit" class="next">Next</button>
+  </form>
+  
+</section>
+
+<section id="Digestion" class="page">
+  <h1>Digestion</h1>
+  <form>
+    <label for="methane">Methane</label><br>
+    <input type="number" id="methane" name="methane"><br>
+    <button type="submit" class="next">Next</button>
+  </form>
+  
+</section>
+
+<section id="Imported-feed" class="page">
+  <h1>Imported feed</h1>
+  <form>
+    <label for="carbon_dioxide_imported">Carbon dioxide</label><br>
+    <input type="number" id="carbon_dioxide_imported" name="carbon_dioxide_imported"><br>
+    <button type="submit" class="next">Next</button>
+  </form>
+  
+</section>
+
+<section id="Carbon-footprint" class="page">
+  <h1>Carbon footprint</h1>
+  <form>
+    <label for="carbon_dioxide_footprint">Carbon dioxide</label><br>
+    <input type="number" id="carbon_dioxide_footprint" name="carbon_dioxide_footprint"><br>
+    <button type="submit" class="next">Next</button>
+  </form>
+  
+</section>
+
+
+</main>
+
+
+
+<!-- main js file -->
+<script src="/js/main.js"></script>
+<!-- SPA functionality  -->
+<script src="/js/spa.js"></script>
+<!-- data page js file -->
+<script src="/js/datainput.js"></script>
+>>>>>>> Stashed changes
 </body>
 
 </html>
