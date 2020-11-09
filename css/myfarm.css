@@ -69,6 +69,27 @@ canvas {
   color: #4CAF50;
 }
 
+/*---graph section---*/
+.graph-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    padding: 0 5%;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+}
+.bar, .line, .pie {
+  margin: 2% 2%;
+  width: 10%;
+  height: 50px;
+  border: 2px solid #3A4443;
+  border-radius: 20px;
+  text-align: center;
+vertical-align: middle;
+line-height: 50px; 
+}
+
 
 /*Goals section*/
 #goals {
@@ -128,4 +149,21 @@ font-size: 3vh;
 
 #goals div div p {
   font-size: 2vh;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+.type-dropbtn:hover, .type-dropbtn:focus {
+  background-color: #4CAF50;
+}
+.type-dropbtn {
+  width: 200px;
+}
+.bar:hover, .line:hover, .pie:hover{
+  background-color: #FECE1E;
+}
+
 }
