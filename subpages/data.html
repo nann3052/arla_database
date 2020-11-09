@@ -125,7 +125,7 @@
 <form>
   <p>
     <label for="feed_consumption">
-        <span>Feed consumption:</span>
+        <span ><p class="input-title">Feed consumption</p></span>
         <input type="text" class="feed_consumption" id="feed_consumption" name="feed_consumption">
         <span class="error" aria-live="polite"></span>
     </label>
@@ -138,14 +138,20 @@
 </section>
 
 <section id="Herd" class="page">
-  <h1>Herd</h1>
   <form>
-    <label for="milk_production">Milk production</label><br>
-    <input type="number" id="milk_production" name="milk_production"><br>
-    <label for="year_cows">Year-cows</label><br>
-    <input type="number" id="year_cows" name="year_cows"><br>
-    <label for="self_sufficiency">Self-sufficiency in feed</label><br>
+    <label for="milk_production">
+      <span>Milk production</span><br>
+      <input type="number" id="milk_production" name="milk_production"><br>
+    </label>
+    
+    <label for="year_cows">
+      <span>Year cows</span><br>
+      <input type="number" id="year_cows" name="year_cows"><br>
+    </label>
+    <label for="self_sufficiency">
+      <span>Self-sufficiency in feed</span><br>
     <input type="number" id="self_sufficiency" name="self_sufficiency"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
@@ -153,12 +159,15 @@
 
 
 <section id="Energy" class="page">
-  <h1>Energy</h1>
   <form>
-    <label for="diesel">Diesel</label><br>
+    <label for="diesel">
+      <span>Diesel</span><br>
     <input type="number" id="diesel" name="diesel"><br>
-    <label for="electricity">Electricity</label><br>
+    </label>
+    <label for="electricity">
+      <span>Electricity</span><br>
     <input type="number" id="electricity" name="electricity"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
@@ -166,50 +175,55 @@
 
 
 <section id="Diesel" class="page">
-  <h1>Diesel</h1>
   <form>
-    <label for="carbon_dioxide_diesel">Carbon dioxide</label><br>
+    <label for="carbon_dioxide_diesel">
+      <span>Carbon dioxide</span><br>
     <input type="number" id="carbon_dioxide_diesel" name="carbon_dioxide_diesel"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 <section id="Electricity-&-Heating" class="page">
-  <h1>Electricity and heating</h1>
   <form>
-    <label for="carbon_dioxide_electricity">Carbon dioxide</label><br>
+    <label for="carbon_dioxide_electricity">
+      <span>Carbon dioxide</span><br>
     <input type="number" id="carbon_dioxide_electricity" name="carbon_dioxide_electricity"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 <section id="Digestion" class="page">
-  <h1>Digestion</h1>
   <form>
-    <label for="methane">Methane</label><br>
+    <label for="methane">
+      <span>Methane</span><br>
     <input type="number" id="methane" name="methane"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 <section id="Imported-feed" class="page">
-  <h1>Imported feed</h1>
   <form>
-    <label for="carbon_dioxide_imported">Carbon dioxide</label><br>
+    <label for="carbon_dioxide_imported">
+      <span>Carbon dioxide</span><br>
     <input type="number" id="carbon_dioxide_imported" name="carbon_dioxide_imported"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 <section id="Carbon-footprint" class="page">
-  <h1>Carbon footprint</h1>
   <form>
-    <label for="carbon_dioxide_footprint">Carbon dioxide</label><br>
+    <label for="carbon_dioxide_footprint">
+      <span>Carbon dioxide</span><br>
     <input type="number" id="carbon_dioxide_footprint" name="carbon_dioxide_footprint"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
