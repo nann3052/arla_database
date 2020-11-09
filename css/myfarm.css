@@ -10,7 +10,6 @@ html {
   height: 100%;
   text-align: center;
   width: 100%;
-  font-weight: 200;
 }
 
 h1 {
@@ -33,7 +32,8 @@ h2 {
 /*------ Graphs ------*/
 canvas {
   max-width: 80%;
-  margin: 2em auto;
+  margin: 2% 6%;
+  text-align: center;
 }
 
 /*------ Navigation bar ------*/
