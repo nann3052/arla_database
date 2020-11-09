@@ -51,7 +51,14 @@
       </div>
       <div class="rightnav">
         <a href=""><img src="img/questionmark.png" alt="question"></a>
-        <a href=""><img src="img/danishflag.png" alt="danish flag"></a>
+        <div class="flag-dropdown">
+          <button onclick="flagFunction()" class="flag-dropbtn"><img src="img/danishflag.png"
+              alt="danish flag"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#"><img src="img/ukflag.png" alt="uk flag"></a>
+            <a href="#"><img src="img/germanflag.png" alt="uk flag"></a>
+          </div>
+        </div>
         <a href="subpages/login.html">Logout</a>
       </div>
     </div>
@@ -136,13 +143,10 @@
       </div>
     </section>
 
-    <!-- Firebase App SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
     <!--- Load chart.js from CDN --->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <!-- load firebase config -->
-    <script src="js/firebase_config.js"></script>
+
     <!-- main js file -->
     <script src="js/main.js"></script>
     <!-- modal file -->
