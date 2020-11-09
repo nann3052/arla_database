@@ -69,23 +69,22 @@ body {
 }
 
 .desktop-nav a {
-color: #f2f2f2;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1em;
-
 }
 
 .leftnav {
-  width:30%;
+  width: 30%;
   margin-left: 5%;
 }
 
 .leftnav img {
   width: 80px;
   margin: 0;
-   float: left;
+  float: left;
 
 }
 
@@ -95,26 +94,28 @@ color: #f2f2f2;
   padding-top: 1%;
   text-align: center;
 }
+
 .centernav a {
   margin: 0 3% 0 3%;
 }
 
 
 .rightnav {
- width: 30%;
- margin: 0;
-   text-align: right;
-   float: right;
+  width: 30%;
+  margin: 0;
+  text-align: right;
+  float: right;
 }
+
 .rightnav img {
   width: 30px;
   margin: 0;
 }
 
-.questionmark img{
+.questionmark img {
   width: 20px;
 }
-  
+
 
 
 .desktop-nav a:hover {
@@ -124,6 +125,7 @@ color: #f2f2f2;
 .desktop-nav a.active {
   color: #4CAF50;
 }
+
 /*------------------------- Flag drop down styling------------ */
 
 .flag-dropbtn {
@@ -134,7 +136,8 @@ color: #f2f2f2;
   background-color: #3A4443;
 }
 
-.flag-dropbtn:hover, .flag-dropbtn:focus {
+.flag-dropbtn:hover,
+.flag-dropbtn:focus {
   background-color: #4CAF50;
 }
 
@@ -150,7 +153,7 @@ color: #f2f2f2;
   position: absolute;
   background-color: #f2f2f2;
   width: 62px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -162,7 +165,9 @@ color: #f2f2f2;
 }
 
 /* Show the dropdown menu after applying JS */
-.flag-show {display:block;}
+.flag-show {
+  display: block;
+}
 
 /*--------------- Navigation bar mobile -----------*/
 
@@ -282,19 +287,21 @@ ul {
 /*------ Media Query at desktop -----*/
 
 @media only screen and (min-width: 768px) {
-   /*------ Navigation to desktop-------*/
-  .desktop-nav {
-  
-  background-color: #3A4443;
-  padding: 1%;
-   height: 10vh;
-   display: flex;
-   flex-direction: row;
-   margin: 0;
 
-}
- .mobile-nav {
-  display: none;
-}
+  /*------ Navigation to desktop-------*/
+  .desktop-nav {
+
+    background-color: #3A4443;
+    padding: 1%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+  }
+
+  .mobile-nav {
+    display: none;
+  }
 
 }
