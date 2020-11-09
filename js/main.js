@@ -1,4 +1,4 @@
-/* When the user clicks on the button,
+/* W
 toggle between hiding and showing the dropdown content */
 function flagFunction() {
     document.getElementById("flagDropdown").classList.toggle("show");
