@@ -6,192 +6,193 @@
   <title>Arla Database</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Arla Farmers Database">
-  <link rel="shortcut icon" type="image/png" href="img/arla_flower.png" />
+  <link rel="shortcut icon" type="image/png" href="/img/arla_flower.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/data.css">
 </head>
+
 <body onhashchange="pageChange()">
-<nav>
-  <!---Mobile navigation--->
+  <nav>
+    <!---Mobile navigation--->
 
-  <div class="mobile-nav">
-    <div class="content">
-      <nav role="navigation">
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul id="menu">
-            <li><a href="/index.html">Home</li>
-            <li><a href="/subpages/data.html">Data</a></li>
-            <li><a href="/subpages/arlafarms.html">Arla Farms</a></li>
-            <li><a href="/subpages/myfarm.html">My Farm</a></li>
-            <li><a href="/subpages/settings.html">Help</a></li>
-          </ul>
+    <div class="mobile-nav">
+      <div class="content">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li><a href="/index.html">Home</li>
+              <li><a href="/subpages/data.html">Data</a></li>
+              <li><a href="/subpages/arlafarms.html">Arla Farms</a></li>
+              <li><a href="/subpages/myfarm.html">My Farm</a></li>
+              <li><a href="/subpages/settings.html">Help</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!---Mobile navigation ends--->
+
+    <!----Desktop navigation--->
+    <div class="desktop-nav">
+      <div class="leftnav">
+        <a href="index.html"><img src="/img/arla_logo.png" alt="arla logo"></a>
+      </div>
+      <div class="centernav">
+        <a href="/subpages/data.html">Data</a>
+        <a href="/subpages/arlafarms.html">Arla Farms</a>
+        <a href="/subpages/myfarm.html">My Farm</a>
+      </div>
+      <div class="rightnav">
+        <a href="data.html">Questions</a>
+        <a href="data.html">Flag</a>
+        <a href="/subpages/login.html">Logout</a>
+      </div>
+    </div>
+    <!---Desktop navigation ends--->
+
+  </nav>
+
+  <main>
+    <aside>
+      <h3>Cows</h3>
+      <h3>Milk</h3>
+      <h3>Herd</h3>
+    </aside>
+    <div id="data-input-container">
+      <div id="farm-navigation">
+        <div id="farm1">
+          <h2>NØRBYGÅRD - 56654</h2>
         </div>
-      </nav>
-    </div>
-  </div>
-
-  <!---Mobile navigation ends--->
-
-  <!----Desktop navigation--->
-  <div class="desktop-nav">
-    <div class="leftnav">
-      <a href="index.html"><img src="/img/arla_logo.png" alt="arla logo"></a>
-    </div>
-    <div class="centernav">
-      <a href="/subpages/data.html">Data</a>
-      <a href="/subpages/arlafarms.html">Arla Farms</a>
-      <a href="/subpages/myfarm.html">My Farm</a>
-    </div>
-    <div class="rightnav">
-      <a href="data.html">Questions</a>
-      <a href="data.html">Flag</a>
-      <a href="/subpages/login.html">Logout</a>
-    </div>
-  </div>
-  <!---Desktop navigation ends--->
-
-</nav>
-
-<main>
-  <aside>
-    <h3>Cows</h3>
-    <h3>Milk</h3>
-    <h3>Herd</h3>
-  </aside>
-  <div id="data-input-container">
-    <div id="farm-navigation">
-      <div id="farm1">
-        <h2>NØRBYGÅRD - 56654</h2>
+        <div id="farm2">
+          <h2>ØGÅRDEN - 99833</h2>
+        </div>
       </div>
-      <div id="farm2">
-        <h2>ØGÅRDEN - 99833</h2>
+      <div id="farm-navigation-mobile">
+        <form>
+          <select>
+            <option>NØRBYGÅRD - 56654</option>
+            <option>ØGÅRDEN - 99833</option>
+          </select>
+        </form>
       </div>
+      <div id="data-categories-mobile">
+
+        <div class="dropdown">
+          <button onclick="dropdown()" class="dropbtn">Selected item</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#Cows">Cows</a>
+            <a href="#Herd">Herd</a>
+            <a href="#Energy">Energy</a>
+            <a href="#Diesel">Diesel</a>
+            <a href="#Electricity-&-Heating">Electricity & Heating</a>
+            <a href="#Digestion">Digestion</a>
+            <a href="#Imported-feed">Imported feed</a>
+            <a href="#Carbon-footprint">Carbon footprint</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div id="farm-navigation-mobile">
-      <form>
-        <select>
-          <option>NØRBYGÅRD - 56654</option>
-          <option>ØGÅRDEN - 99833</option>
-        </select>
+
+    <!-- pages -->
+    <section id="Cows" class="page">
+      <h1>Cows</h1>
+      <form name="cows" onsubmit="return validateForm()">
+        <label for="feed_consumption">Feed consumption</label><br>
+        <input type="number" id="feed_consumption" name="feed_consumption"><br>
+        <input type="submit" value="Submit">
       </form>
-    </div>
-    <div id="data-categories-mobile">
-      
-      <div class="dropdown">
-        <button onclick="dropdown()" class="dropbtn">Selected item</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#Cows">Cows</a>
-          <a href="#Herd">Herd</a>
-          <a href="#Energy">Energy</a>
-          <a href="#Diesel">Diesel</a>
-          <a href="#Electricity-&-Heating">Electricity & Heating</a>
-          <a href="#Digestion">Digestion</a>
-          <a href="#Imported-feed">Imported feed</a>
-          <a href="#Carbon-footprint">Carbon footprint</a>
-        </div>
-      </div>
-    </div>
+      <button type="submit" id="next">Next</button>
+    </section>
 
-  </div>
-
-<!-- pages -->
-<section id="Cows" class="page">
-  <h1>Cows</h1>
-  <form name="cows" onsubmit="return validateForm()">
-    <label for="feed_consumption">Feed consumption</label><br>
-    <input type="number" id="feed_consumption" name="feed_consumption"><br>
-    <input type="submit" value="Submit">
-  </form>
-  <button type="submit" id="next" >Next</button>
-</section>
-
-<section id="Herd" class="page">
-  <h1>Herd</h1>
-  <form>
-    <label for="milk_production">Milk production</label><br>
-    <input type="number" id="milk_production" name="milk_production"><br>
-    <label for="year_cows">Year-cows</label><br>
-    <input type="number" id="year_cows" name="year_cows"><br>
-    <label for="self_sufficiency">Self-sufficiency in feed</label><br>
-    <input type="number" id="self_sufficiency" name="self_sufficiency"><br>
-  </form>
-  <button type="submit" id="next">Next</button>
-</section>
+    <section id="Herd" class="page">
+      <h1>Herd</h1>
+      <form>
+        <label for="milk_production">Milk production</label><br>
+        <input type="number" id="milk_production" name="milk_production"><br>
+        <label for="year_cows">Year-cows</label><br>
+        <input type="number" id="year_cows" name="year_cows"><br>
+        <label for="self_sufficiency">Self-sufficiency in feed</label><br>
+        <input type="number" id="self_sufficiency" name="self_sufficiency"><br>
+      </form>
+      <button type="submit" id="next">Next</button>
+    </section>
 
 
-<section id="Energy" class="page">
-  <h1>Energy</h1>
-  <form>
-    <label for="diesel">Diesel</label><br>
-    <input type="number" id="diesel" name="diesel"><br>
-    <label for="electricity">Electricity</label><br>
-    <input type="number" id="electricity" name="electricity"><br>
-  </form>
-  <button type="submit" id="next">Next</button>
-</section>
+    <section id="Energy" class="page">
+      <h1>Energy</h1>
+      <form>
+        <label for="diesel">Diesel</label><br>
+        <input type="number" id="diesel" name="diesel"><br>
+        <label for="electricity">Electricity</label><br>
+        <input type="number" id="electricity" name="electricity"><br>
+      </form>
+      <button type="submit" id="next">Next</button>
+    </section>
 
 
-<section id="Diesel" class="page">
-  <h1>Diesel</h1>
-  <form>
-    <label for="carbon_dioxide_diesel">Carbon dioxide</label><br>
-    <input type="number" id="carbon_dioxide_diesel" name="carbon_dioxide_diesel"><br>
-  </form>
-  <button type="submit" id="next">Next</button>
-</section>
+    <section id="Diesel" class="page">
+      <h1>Diesel</h1>
+      <form>
+        <label for="carbon_dioxide_diesel">Carbon dioxide</label><br>
+        <input type="number" id="carbon_dioxide_diesel" name="carbon_dioxide_diesel"><br>
+      </form>
+      <button type="submit" id="next">Next</button>
+    </section>
 
-<section id="Electricity-&-Heating" class="page">
-  <h1>Electricity and heating</h1>
-  <form>
-    <label for="carbon_dioxide_electricity">Carbon dioxide</label><br>
-    <input type="number" id="carbon_dioxide_electricity" name="carbon_dioxide_electricity"><br>
-  </form>
-  <button type="submit" id="next">Next</button>
-</section>
+    <section id="Electricity-&-Heating" class="page">
+      <h1>Electricity and heating</h1>
+      <form>
+        <label for="carbon_dioxide_electricity">Carbon dioxide</label><br>
+        <input type="number" id="carbon_dioxide_electricity" name="carbon_dioxide_electricity"><br>
+      </form>
+      <button type="submit" id="next">Next</button>
+    </section>
 
-<section id="Digestion" class="page">
-  <h1>Digestion</h1>
-  <form>
-    <label for="methane">Methane</label><br>
-    <input type="number" id="methane" name="methane"><br>
-  </form>
-  <button type="submit" id="next">Next</button>
-</section>
+    <section id="Digestion" class="page">
+      <h1>Digestion</h1>
+      <form>
+        <label for="methane">Methane</label><br>
+        <input type="number" id="methane" name="methane"><br>
+      </form>
+      <button type="submit" id="next">Next</button>
+    </section>
 
-<section id="Imported-feed" class="page">
-  <h1>Imported feed</h1>
-  <form>
-    <label for="carbon_dioxide_imported">Carbon dioxide</label><br>
-    <input type="number" id="carbon_dioxide_imported" name="carbon_dioxide_imported"><br>
-  </form>
-  <button type="submit" id="next">Next</button>
-</section>
+    <section id="Imported-feed" class="page">
+      <h1>Imported feed</h1>
+      <form>
+        <label for="carbon_dioxide_imported">Carbon dioxide</label><br>
+        <input type="number" id="carbon_dioxide_imported" name="carbon_dioxide_imported"><br>
+      </form>
+      <button type="submit" id="next">Next</button>
+    </section>
 
-<section id="Carbon-footprint" class="page">
-  <h1>Carbon footprint</h1>
-  <form>
-    <label for="carbon_dioxide_footprint">Carbon dioxide</label><br>
-    <input type="number" id="carbon_dioxide_footprint" name="carbon_dioxide_footprint"><br>
-  </form>
-  <button type="submit" id="next">Next</button>
-</section>
+    <section id="Carbon-footprint" class="page">
+      <h1>Carbon footprint</h1>
+      <form>
+        <label for="carbon_dioxide_footprint">Carbon dioxide</label><br>
+        <input type="number" id="carbon_dioxide_footprint" name="carbon_dioxide_footprint"><br>
+      </form>
+      <button type="submit" id="next">Next</button>
+    </section>
 
 
-</main>
+  </main>
 
 
 
-<!-- main js file -->
-<script src="/js/main.js"></script>
-<!-- SPA functionality  -->
-<script src="/js/spa.js"></script>
-<!-- data page js file -->
-<script src="/js/datainput.js"></script>
+  <!-- main js file -->
+  <script src="/js/main.js"></script>
+  <!-- SPA functionality  -->
+  <script src="/js/spa.js"></script>
+  <!-- data page js file -->
+  <script src="/js/datainput.js"></script>
 </body>
 
 </html>
