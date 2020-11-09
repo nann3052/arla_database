@@ -135,7 +135,7 @@ select {
 
 /* page styling */
 
-#next {
+.next {
   margin-top: 3vh;
   padding: 1.5vh 10vw;
   background-color: var(--dark-green);
