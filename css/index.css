@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 html {
   color: #333;
   display: table;
@@ -96,6 +100,7 @@ button {
 
 
 /*------ Onboarding ------*/
+
 /* The onboarding top bar */
 .onboarding_topbar {
   width: 100%;
@@ -141,10 +146,9 @@ button {
   z-index: 10;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 375px;
   height: 100%;
-  overflow: auto;
-  padding-top: 20%;
+  padding-top: 12%;
   background-color: white;
 }
 
@@ -171,7 +175,7 @@ button {
 .next {
   padding: 1em 15vw;
   width: fit-content;
-  margin: 5vh auto;
+  margin: 7vh auto 5vh;
   border: none;
   border-radius: 8px;
   background-color: #006A38;
