@@ -64,13 +64,18 @@
     <!---Desktop navigation ends--->
 
   </nav>
-
+  <div id="container">
+  <aside>
+      <a href="#Cows">Cows</a>
+      <a href="#Herd">Herd</a>
+      <a href="#Energy">Energy</a>
+      <a href="#Diesel">Diesel</a>
+      <a href="#Electricity-&-Heating">Electricity & Heating</a>
+      <a href="#Digestion">Digestion</a>
+      <a href="#Imported-feed">Imported feed</a>
+      <a href="#Carbon-footprint">Carbon footprint</a>
+  </aside>
   <main>
-    <aside>
-      <h3>Cows</h3>
-      <h3>Milk</h3>
-      <h3>Herd</h3>
-    </aside>
     <div id="data-input-container">
       <div id="farm-navigation">
         <div id="farm1">
@@ -92,6 +97,7 @@
 
         <div class="dropdown">
           <button onclick="dropdown()" class="dropbtn">Selected item</button>
+          <img src="/img/Icon material-keyboard-arrow-down.svg" id="arrow">
           <div id="myDropdown" class="dropdown-content">
             <a href="#Cows">Cows</a>
             <a href="#Herd">Herd</a>
@@ -106,10 +112,7 @@
       </div>
 
     </div>
-
-  </div>
-
-<!-- pages -->
+    <!-- pages -->
 <section id="Cows" class="page">
   <!-- <h1>Cows</h1>
   <form name="cows" novalidate>
@@ -122,27 +125,33 @@
 <form>
   <p>
     <label for="feed_consumption">
-        <span>Feed consumption:</span>
+        <span ><p class="input-title">Feed consumption</p></span>
         <input type="text" class="feed_consumption" id="feed_consumption" name="feed_consumption">
         <span class="error" aria-live="polite"></span>
     </label>
   </p>
   <!-- Some legacy browsers need to have the `type` attribute
        explicitly set to `submit` on the `button`element -->
-  <button type="submit">Submit</button>
+  <button type="submit" class="next">Next</button>
 </form>
   
 </section>
 
 <section id="Herd" class="page">
-  <h1>Herd</h1>
   <form>
-    <label for="milk_production">Milk production</label><br>
-    <input type="number" id="milk_production" name="milk_production"><br>
-    <label for="year_cows">Year-cows</label><br>
-    <input type="number" id="year_cows" name="year_cows"><br>
-    <label for="self_sufficiency">Self-sufficiency in feed</label><br>
+    <label for="milk_production">
+      <span><p class="input-title">Milk production</p></span><br>
+      <input type="number" id="milk_production" name="milk_production"><br>
+    </label>
+    
+    <label for="year_cows">
+      <span><p class="input-title">Year cows</p></span><br>
+      <input type="number" id="year_cows" name="year_cows"><br>
+    </label>
+    <label for="self_sufficiency">
+      <span><p class="input-title">Self-sufficiency in feed</p></span><br>
     <input type="number" id="self_sufficiency" name="self_sufficiency"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
@@ -150,12 +159,15 @@
 
 
 <section id="Energy" class="page">
-  <h1>Energy</h1>
   <form>
-    <label for="diesel">Diesel</label><br>
+    <label for="diesel">
+      <span><p class="input-title">Diesel</p></span><br>
     <input type="number" id="diesel" name="diesel"><br>
-    <label for="electricity">Electricity</label><br>
+    </label>
+    <label for="electricity">
+      <span><p class="input-title">Electricity</p></span><br>
     <input type="number" id="electricity" name="electricity"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
@@ -163,57 +175,64 @@
 
 
 <section id="Diesel" class="page">
-  <h1>Diesel</h1>
   <form>
-    <label for="carbon_dioxide_diesel">Carbon dioxide</label><br>
+    <label for="carbon_dioxide_diesel">
+      <span><p class="input-title">Carbon dioxide</p></span><br>
     <input type="number" id="carbon_dioxide_diesel" name="carbon_dioxide_diesel"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 <section id="Electricity-&-Heating" class="page">
-  <h1>Electricity and heating</h1>
   <form>
-    <label for="carbon_dioxide_electricity">Carbon dioxide</label><br>
+    <label for="carbon_dioxide_electricity">
+      <span><p class="input-title">Carbon dioxide</p></span><br>
     <input type="number" id="carbon_dioxide_electricity" name="carbon_dioxide_electricity"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 <section id="Digestion" class="page">
-  <h1>Digestion</h1>
   <form>
-    <label for="methane">Methane</label><br>
+    <label for="methane">
+      <span><p class="input-title">Methane</p></span><br>
     <input type="number" id="methane" name="methane"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 <section id="Imported-feed" class="page">
-  <h1>Imported feed</h1>
   <form>
-    <label for="carbon_dioxide_imported">Carbon dioxide</label><br>
+    <label for="carbon_dioxide_imported">
+      <span><p class="input-title">Carbon dioxide</p></span><br>
     <input type="number" id="carbon_dioxide_imported" name="carbon_dioxide_imported"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 <section id="Carbon-footprint" class="page">
-  <h1>Carbon footprint</h1>
   <form>
-    <label for="carbon_dioxide_footprint">Carbon dioxide</label><br>
+    <label for="carbon_dioxide_footprint">
+      <span><p class="input-title">Carbon dioxide</p></span><br>
     <input type="number" id="carbon_dioxide_footprint" name="carbon_dioxide_footprint"><br>
+    </label>
     <button type="submit" class="next">Next</button>
   </form>
   
 </section>
 
 
-</main>
+  </main>
+  </div>
+
 
 
 

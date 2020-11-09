@@ -7,10 +7,10 @@ function dropdown() {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
     for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+      let openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
@@ -60,7 +60,6 @@ addEvent(window, "load", function () {
   // Here, we test if the field is empty (remember, the field is not required)
   // If it is not, we check if its content is a well-formed e-mail address.
   const test = dataInput.value.length === 0 || dataInputRegExp.test(dataInput.value);
-
   dataInput.className = test ? "valid" : "invalid";
 });
 
@@ -82,7 +81,7 @@ addEvent(form, "submit", function () {
 
   if (!test) {
     dataInput.className = "invalid";
-    error.innerHTML = "I expect an e-mail, darling!";
+    error.innerHTML = "Please input a number";
     error.className = "error active";
 
     // Some legacy browsers do not support the event.preventDefault() method

@@ -7,42 +7,6 @@
 }
 
 
-/* #farm-navigation {
-  display: flex;
-  justify-content: space-between;
-  height: 8vh;
-}
-
-#farm1 {
-  width: 50vw;
-  background-color: var(--dark-green);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#farm2 {
-  width: 50vw;
-  background-color: var(--dark-green);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-aside {
-  width: 15vw;
-  background-color: var(--blue-green);
-  height: 93vh;
-}
-
-main {
-  display: flex;
-}
-
-#data-input-container {
-  width: 85vw;
-} */
-
 
 #farm-navigation {
   display: none;
@@ -135,25 +99,43 @@ select {
 
 /* page styling */
 
+#arrow {
+  width: 4vw;
+}
+
 .page {
   display: none;
 }
 
 .next {
   margin-top: 3vh;
-  padding: 1.5vh 10vw;
+  padding: 1vh 5vw;
   background-color: var(--dark-green);
   border: none;
   color: #fff;
+  font-family: 'Arla InterFace',
+    sans-serif;
+  font-weight: 200;
+  font-size: 1.5vw;
 }
 
 /* input validation styling */
+
+.input-title {
+  font-family: 'Arla InterFace',
+    sans-serif;
+  font-weight: 200;
+  font-size: 1.5vw;
+}
 
 p * {
   display: flex;
   flex-direction: column;
   width: 50vw;
   margin: 0 auto;
+  font-family: 'Arla InterFace',
+    sans-serif;
+  font-weight: 200;
 }
 
 input.feed_consumption {
@@ -190,4 +172,75 @@ input:focus.invalid {
 
 .error.active {
   padding: 0.3em;
+}
+
+/* desktop version */
+
+@media only screen and (min-width: 450px) {
+
+  #farm-navigation-mobile {
+    display: none;
+  }
+
+  #data-categories-mobile {
+    display: none;
+  }
+
+  #farm-navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: var(--dark-grey);
+  }
+
+  #farm1 {
+    width: 50vw;
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+  }
+
+  #farm2 {
+    width: 50vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    background-color: var(--light-grey);
+    height: 93vh;
+  }
+
+  aside a {
+    margin-top: 4vh;
+  }
+
+  aside a:hover {
+    color: #fff;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #data-input-container {
+    width: 85vw;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: row;
+  }
 }
