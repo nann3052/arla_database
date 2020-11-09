@@ -89,20 +89,21 @@
       </div>
     </section>
 
-    <!--- Onboarding Modal --->
-    <section class="overlay" id="myOnboarding">
-      <div class="modal-content">
-        <div class="onboarding_topbar">
-          <img src="img/arla_logo.png" class="onboarding_logo" alt="arla logo">
-          <span class="close"><img src="img/close.png" class="close_img" alt="cross"></span>
-        </div>
-        <!--- Modal bottom layer --->
-        <div id="myModal1" class="onboarding">
-          <img src="img/onboarding_img3.png" class="onboarding_img">
-          <div class="text_content">
-            <h3 class="onboarding_headline">See your Statistics</h3>
-            <p class="onboarding_text">Once you have provided us with enough information, we are able to convert your
-              data into statistics and make it easy for you to track your sustainability progress.</p>
+ 
+<!--- Onboarding Modal --->
+<section class="modal" id="myOnboarding">
+  <div class="modal-content">
+    <div class="onboarding_topbar">
+      <img src="img/arla_logo.png" class="onboarding_logo" alt="arla logo">
+        <span class="close"><img src="img/close.png" class="close_img" alt="cross"></span>
+    </div>
+    <!--- Modal bottom layer --->
+    <div id="myModal1" class="onboarding">
+      <img src="img/onboarding_img3.png" class="onboarding_img">
+        <div class="text_content">
+        <h3 class="onboarding_headline">See your Statistics</h3>
+        <p class="onboarding_text">Once you have provided us with enough information, we are able to convert your 
+          data into statistics and make it easy for you to track your sustainability progress.</p>
           </div>
           <div class="progress_content">
             <button onclick="onBoardingBtn1()" type="button" class="next">GET STARTED</button>
@@ -134,15 +135,15 @@
             <p class="onboarding_text">Thank you for helping Arla pave the way for a more
               sustainable dairy production! Click next to learn more.</p>
           </div>
-          <div class="progress_content">
-            <button onclick="onBoardingBtn3()" type="button" class="next">NEXT</button>
-            <img src="img/progress1.png" class="progress_img" alt="progress dots">
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
+      <div class="progress_content">
+        <button onclick="onBoardingBtn3()" type="button" class="next">NEXT</button>
+        <img src="img/progress1.png" class="progress_img" alt="progress dots">
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+</main>
 
     <!--- Load chart.js from CDN --->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
