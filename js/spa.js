@@ -12,7 +12,6 @@ function hideAllPages() {
 function showPage(pageId) {
   hideAllPages();
   document.querySelector(`#${pageId}`).style.display = "block";
-  setActiveTab(pageId);
 }
 
 
@@ -28,6 +27,7 @@ function pageChange() {
   if (location.hash) {
     page = location.hash.slice(1);
   }
+  document.querySelector(".dropbtn").innerHTML = page;
   showPage(page);
 }
 
