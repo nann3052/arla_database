@@ -1,5 +1,7 @@
 "use strict";
 
+/* Graph on Arla Farm Page */
+
 // Fetch the data(no json)
 let _data = [{
   year: "year1",
@@ -20,20 +22,6 @@ let _data = [{
   year: "year6",
   carbonEmission: 47
 }];
-
-/*
-// 1: data
-// Array of objects
-let _data = [];
-
-async function getData() {
-  let response = await fetch("json/alldata.json");
-  _data = await response.json();
-  appendChart();
-};
-
-getData();
-*/
 
 //Prepare data in arrays (no json)
 function prepareData(data) {
