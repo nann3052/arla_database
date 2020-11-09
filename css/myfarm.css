@@ -9,9 +9,8 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   height: 100%;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   font-weight: 200;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -34,7 +33,7 @@ h2 {
 /*------ Graphs ------*/
 canvas {
   max-width: 80%;
-  margin: 2% 6%;
+  margin: 2% 2%;
   text-align: center;
 }
 
