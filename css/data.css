@@ -218,7 +218,7 @@ input:focus.invalid {
     display: flex;
     flex-direction: column;
     width: 15vw;
-    background-color: var(--blue-green);
+    background-color: var(--light-grey);
     height: 93vh;
   }
 
