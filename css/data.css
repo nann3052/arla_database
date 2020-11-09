@@ -121,11 +121,12 @@ select {
 
 /* input validation styling */
 
+
 .input-title {
   font-family: 'Arla InterFace',
     sans-serif;
   font-weight: 200;
-  font-size: 1.5vw;
+  font-size: 5vw;
 }
 
 p * {
@@ -133,9 +134,6 @@ p * {
   flex-direction: column;
   width: 50vw;
   margin: 0 auto;
-  font-family: 'Arla InterFace',
-    sans-serif;
-  font-weight: 200;
 }
 
 input.feed_consumption {
@@ -242,5 +240,9 @@ input:focus.invalid {
   #container {
     display: flex;
     flex-direction: row;
+  }
+
+  .input-title {
+    font-size: 1.5vw;
   }
 }
