@@ -1,42 +1,42 @@
 "use strict";
 
-/* Graph on Arla Farm Page */
+/* Graph on My Farm Page */
 
 // Fetch the data(no json)
-let _data = [{
+let _cowdata = [{
   year: "year1",
-  carbonEmission: 51
+  numberOfCows: 23
 }, {
   year: "year2",
-  carbonEmission: 50
+  numberOfCows: 25
 }, {
   year: "year3",
-  carbonEmission: 49
+  numberOfCows: 24
 }, {
   year: "year4",
-  carbonEmission: 51
+  numberOfCows: 26
 }, {
   year: "year5",
-  carbonEmission: 48
+  numberOfCows: 27
 }, {
   year: "year6",
-  carbonEmission: 47
+  numberOfCows: 26
 }];
 
 //Prepare data in arrays (no json)
 function prepareData(data) {
-  let carbon = [];
+  let cows = [];
   let years = [];
 
   for (let object of data) {
-    carbon.push(object.carbonEmission);
+    cows.push(object.numberOfCows);
     years.push(object.year);
   }
-  console.log(carbon);
+  console.log(cows);
   console.log(years);
 
   return {
-    cows: carbon,
+    cows: cows,
     years
   }
 }
@@ -48,15 +48,15 @@ function appendChart(data) {
   console.log(chartData)
 
   // generate chart
-  let chartContainer = document.getElementById('carbon');
+  let chartContainer = document.getElementById('cows');
   let chart = new Chart(chartContainer, {
-    type: 'bar',
+    type: 'line',
     data: {
       datasets: [{
         data: chartData.cows,
-        label: 'Co2 Emission Tons',
+        label: 'Number of Cows',
         fill: false,
-        borderColor: "#e755ba",
+        borderColor: "#579755",
         borderDash: [6, 6],
         backgroundColor: "#006A38",
         pointBackgroundColor: "#006A38",
@@ -70,8 +70,8 @@ function appendChart(data) {
       scales: {
         yAxes: [{
           ticks: {
-            min: 43,
-            max: 55
+            min: 20,
+            max: 30
           }
         }]
       }
@@ -79,5 +79,4 @@ function appendChart(data) {
   });
 }
 
-appendChart(_data);
-
+appendChart(_cowdata);
