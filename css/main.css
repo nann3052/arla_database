@@ -59,9 +59,7 @@ html {
   width: 100vw;
   font-weight: 200;
 }
-body {
-  overflow: hidden;
-}
+
 
 /*------ Navigation bar desktop ------*/
 .desktop-nav {

@@ -24,6 +24,7 @@ h2 {
   border: none;
   cursor: pointer;
   background-color: #FECE1E;
+  width: 100px;
 }
 
 .type-dropdown {
